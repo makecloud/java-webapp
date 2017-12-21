@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OneJavaModule/OneJavaModule.iml" filepath="$PROJECT_DIR$/OneJavaModule/OneJavaModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-1.iml" filepath="$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-2.iml" filepath="$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-3.iml" filepath="$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-4.iml" filepath="$PROJECT_DIR$/lrn-mybatis-1/lrn-mybatis-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/platform/platform.iml" filepath="$PROJECT_DIR$/platform/platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/springdemo/springdemo.iml" filepath="$PROJECT_DIR$/springdemo/springdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" filepath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" />

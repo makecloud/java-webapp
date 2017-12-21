@@ -42,11 +42,13 @@ public class CMD {
 			int exitv = p.exitValue();
 			System.out.println("cmd exitValue:"+exitv);
 			return "execute success.";
-		}
-		catch (IOException | InterruptedException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 			return "excute failed.";
-		}finally{
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+			return "excute failed.";
+		} finally{
 			if(p!=null){
 				p.destroy();
 			}

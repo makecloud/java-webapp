@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.liuyihui.lrn.entity.UserMapper"><!--指定一个不存在的类名, 运行时mybatis会自动生成该对象-->
+    <select id="selectUserByID" parameterType="int" resultType="User">
+        select * from user where id = #{id}
+    </select>
+</mapper>
