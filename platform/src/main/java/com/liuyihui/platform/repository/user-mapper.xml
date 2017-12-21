@@ -5,36 +5,37 @@
 
 <!-- mybatis映射文件 -->
 <mapper namespace="com.liuyihui.platform.repository.IUser"><!-- namespace跟接口名对应 -->
+    <!--
+        需要返回list时，可用下面的resultMap配置。也可以不用,直接将接口方法返回类型改成对应实体的List就自动返回list。
+        (名好像不是上面那句话那么回事儿,而是resultMap是用来映射列名跟类属性的,不用写全每个列,没写的列如果列名和属性名完全一致也会查到该列的)
+        用法：resultType=下面的id
+     -->
+    <resultMap type="User" id="resultUser">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="password" property="password"/>
+    </resultMap>
+
     <!-- id跟接口的方法对应 -->
-    <select id="selectUserByID" parameterType="int" resultType="User">
+    <select id="selectUserByID" parameterType="int" resultMap="resultUser">
         select * from user where id = #{id}
     </select>
 
-    <select id="selectUserByName" parameterType="string" resultType="User">
+    <select id="selectUserByName" parameterType="string" resultMap="resultUser">
         select * from user where user_name = #{userName}
     </select>
 
-    <!-- 查询用户实体集合 ,自动返回List形式-->
+    <!-- 查询用户实体集合 ,只要将接口方法返回值写成list就会自动返回List形式 -->
     <select id="queryUser" resultType="User">
-    	select * from user where userName like #{userName}
+        select * from user where userName like #{userName}
     </select>
 
-    <!-- 查询用户实体集合 ，使用resultMap-->
-    <select id="queryUser2" resultMap="resultUserList">
-    	select * from user where userName like #{userName}
+    <!-- 查询用户实体集合 ，使用resultMap将返回的列名映射到实体类属性-->
+    <select id="queryUser2" resultMap="resultUser">
+        select * from user where userName like #{userName}
     </select>
 
-    <!-- 
-    	需要返回list时，可用下面的resultMap配置。也可以不用,直接将接口方法返回类型改成对应实体的List就自动返回list。
-    	用法：resultType=下面的id
-     -->
-    <resultMap type="User" id="resultUserList">
-        <id column="id" property="id"/>
-        <result column="userName" property="userName"/>
-        <result column="userAge" property="userAge"/>
-        <result column="userAddress" property="userAddress"/>
-    </resultMap>
-    <!-- 
+    <!--
     	插入标签
     	useGeneratedKeys="true" 指示要mybatis获取由数据库自动生成的主键
     	keyProperty="user.id" 指示把获取到的主键注入到user的id属性
