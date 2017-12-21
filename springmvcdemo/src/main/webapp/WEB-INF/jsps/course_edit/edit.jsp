@@ -8,8 +8,8 @@
 <title>我不是真正的慕课网</title>
 
 <%-- <link rel="stylesheet"
-	href="<%=request.getContextPath()%>/resources/css/main.css"
-	type="text/css" /> --%>
+	href="<%=request.getContextPath()%>/resources/commoncss/main.commoncss"
+	type="text/commoncss" /> --%>
 </head>
 <body>
 	<div id="main">

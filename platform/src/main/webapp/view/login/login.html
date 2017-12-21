@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/platform.css">
+  <style>
+    .login_main{
+      position: relative;
+    }
+    .error{
+      position: absolute;
+      left:414px;
+      height: 24px;
+      padding:0 8px;
+      line-height: 24px;
+      font-size: 12px;
+      color: #000;
+      text-align: center;
+      border-radius: 3px;
+      background: #ffff00;
+      opacity:0;
+    }
+  </style>
+</head>
+<body style="background: rgb(0, 23, 47);">
+<div id="login">
+  <div class="login_box">
+    <div class="login_main">
+      <a href="../common/index.html" class="login_logo">
+        <i class="login_icon"></i>
+      </a>
+      <div class="login_content">
+        <ul class="login_msg">
+          <li class="name">
+            <span class="l_icon1">
+              <i class="l_i1"></i>
+            </span>
+            <input type="text" class="uname" id="uname" placeholder="请输入用户名" minlength="2" maxlength="12" autocomplete="off">
+          </li>
+          <li class="pwd">
+            <span class="l_icon2">
+              <i class="l_i2"></i>
+            </span>
+            <input type="password" class="upwd" id="upwd" placeholder="请输入密码" minlength="6" maxlength="12" autocomplete="off">
+          </li>
+          <li class="code">
+            <span class="l_icon3">
+              <i class="l_i3"></i>
+            </span>
+            <input type="text" class="ucode" id="ucode" placeholder="请输入验证码" maxlength="4" autocomplete="off">
+            <span class="code_click"></span>
+          </li>
+          <li class="check_box">
+            <label class="r_pwd_btn">
+              <span class="r_pwd">
+                <i class="on"></i>
+              </span>
+              记住密码
+            </label>
+          </li>
+          <li class="login_btn">
+            <a href="../common/index.html" target="_blank">登录</a>
+          </li>
+          <li class="prompt">
+            <span class="prompt_register"><a href="../common/register.html">立即注册</a></span>
+            <span class="prompt_pwd"><a href="../common/forgetpwd.html">忘记密码</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="error">
+        <span class="error_text"></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/login.js"></script>
+</body>
+
+</html>
