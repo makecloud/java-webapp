@@ -41,6 +41,7 @@
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.0" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.8" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.22" />
         </element>
       </element>
       <element id="directory" name="META-INF">
