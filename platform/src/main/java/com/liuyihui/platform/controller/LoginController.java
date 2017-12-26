@@ -5,12 +5,9 @@ import com.liuyihui.platform.entity.ApiResponse;
 import com.liuyihui.platform.entity.User;
 import com.liuyihui.platform.service.LoginService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -20,7 +17,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author liuyi
  */
-@SessionAttributes("User")
+@SessionAttributes("user")
 @Controller(value = "loginController")
 public class LoginController {
 
@@ -33,16 +30,23 @@ public class LoginController {
      * @return
      */
     @RequestMapping("/login")
-    public String login() {
+    public String login(ModelMap modelMap) {
+        //
+        if (modelMap.containsAttribute("user")) {
+            System.out.println("已登录过");
+            return "index";
+        }
         return "login";
     }
 
-    @RequestMapping("/doLogin")
+
+    @RequestMapping("/dologin")
     public @ResponseBody
     ApiResponse doLogin(
             @RequestParam("userName") String userName,
             @RequestParam("password") String password,
-            ModelMap modelMap) {
+            ModelMap modelMap,
+            HttpSession session) {
 
         //定义结果
         ApiResponse apiResponse = new ApiResponse();
@@ -54,8 +58,8 @@ public class LoginController {
             System.out.println(user);
             return apiResponse;
         }*/
-        if (modelMap.containsAttribute("User")) {
-            User user = (User) modelMap.get("User");
+        if (modelMap.containsAttribute("user")) {
+            User user = (User) modelMap.get("user");
             System.out.println("已含有的user:" + user);
             if (user.getUserName() != null) {
                 apiResponse.setCode(0);
@@ -74,25 +78,28 @@ public class LoginController {
         } else {
             apiResponse.setCode(0);
             apiResponse.setMessage("登录成功");
-            modelMap.addAttribute("User", user);
+            modelMap.addAttribute("user", user);
         }
 
+        //打印session对象
+        System.out.println("session in login:" + session);
+
+        //返回数据
         return apiResponse;
     }
 
     @RequestMapping("/logout")
-    public String logout(Model model, HttpSession session) {
-        if (model.containsAttribute("User")) {
-            System.out.println("model Contains User");
-            User user = (User) model.asMap().get("User");
-            System.out.println(user);
-        }
+    public String logout(@ModelAttribute("user") User user, SessionStatus
+            sessionStatus, HttpSession session) {
+        /*if (session.getAttribute("user") != null) {
+            session.removeAttribute("user");
+            System.out.println("移除Session中的user");
+            //可能是因为model中还存有User对象, 所以方法执行完返回页面之前,springmvc根据类名的@SessionAttribute注解又将model中的User对象存回了Session中
+        }*/
+        session.removeAttribute("user");
+        sessionStatus.setComplete();//这个方法告诉了springmvc清除session中的所有属性了
 
-        if (session.getAttribute("User") != null) {
-            session.removeAttribute("User");
-            System.out.println("移除Session中的User");
-        }
-        return "home";
+        return "index";
     }
 
 }

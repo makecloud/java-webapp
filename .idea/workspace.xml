@@ -7,63 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6697a718-fad2-4324-87cf-847e5d38abd8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/advantage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/commonjs/html5shiv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/commonjs/jquery-3.2.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/commonjs/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/commonjs/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/commonjs/roundabout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/css/platform.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/css/system.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/advantage-banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/advantage1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/advantage2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/advantage3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/banner1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/banner2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/banner3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/case-car.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/case-clothes.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/dsj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/exchange.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/ggz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/icons-ex.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/login.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/mtz.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/partner1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/partner2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/partner3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/img/partner4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/js/forgetpwd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/js/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/common/js/register.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/forgetpwd.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/css/platform.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/img/login.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/js/jquery-3.2.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/js/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/js/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/login/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/product.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/webapp/view/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/target/platform/WEB-INF/configs/mvc-dispatcher-servlet.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/StudentController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/util/MyExceptionHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platform/src/main/webapp/resources/xxx.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platform/src/main/webapp/view/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/platform/src/main/webapp/view/login.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/DemoController.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/platform_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/platform_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/platform.iml" afterPath="$PROJECT_DIR$/platform/platform.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/Controller2.java" afterPath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/Controller2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/pom.xml" afterPath="$PROJECT_DIR$/platform/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/LoginController.java" afterPath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/service/LoginService.java" afterPath="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/service/LoginService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/src/main/resources/springmvc-dispatcherServlet-config.xml" afterPath="$PROJECT_DIR$/platform/src/main/resources/springmvc-dispatcherServlet-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/target/platform/WEB-INF/jsps/course_edit/edit.jsp" afterPath="$PROJECT_DIR$/platform/target/platform/WEB-INF/jsps/course_edit/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/target/platform/WEB-INF/jsps/upload/upload_result.jsp" afterPath="$PROJECT_DIR$/platform/target/platform/WEB-INF/jsps/upload/upload_result.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/target/platform/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/platform/target/platform/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platform/target/platform/index.jsp" afterPath="$PROJECT_DIR$/platform/target/platform/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/../learn_deprecated/target/" />
     <ignored path="$PROJECT_DIR$/general/target/" />
@@ -91,11 +49,10 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="-413">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
-                <element signature="e#943#944#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +61,18 @@
       <file leaf-file-name="springmvc-dispatcherServlet-config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/platform/src/main/resources/springmvc-dispatcherServlet-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="1577">
+              <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/StudentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -171,7 +138,6 @@
         <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/CourseController.java" />
         <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/util/CMD.java" />
         <option value="$PROJECT_DIR$/lrn-mybatis-4/pom.xml" />
-        <option value="$PROJECT_DIR$/platform/pom.xml" />
         <option value="$PROJECT_DIR$/platform/src/main/webapp/WEB-INF/configs/mvc-dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/platform/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/repository/IUser.java" />
@@ -179,13 +145,17 @@
         <option value="$PROJECT_DIR$/platform/src/main/resources/mybatis-configuration.xml" />
         <option value="$PROJECT_DIR$/platform/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/entity/User.java" />
-        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/service/LoginService.java" />
         <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/repository/user-mapper.xml" />
         <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/DemoController.java" />
-        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/Controller2.java" />
-        <option value="$PROJECT_DIR$/platform/src/main/webapp/view/login.html" />
-        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/platform/src/main/webapp/login.htm" />
+        <option value="$PROJECT_DIR$/platform/src/main/webapp/resources/xxx.htm" />
+        <option value="$PROJECT_DIR$/platform/pom.xml" />
+        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/platform/src/main/webapp/view/index.html" />
+        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/util/MyExceptionHandler.java" />
         <option value="$PROJECT_DIR$/platform/src/main/resources/springmvc-dispatcherServlet-config.xml" />
+        <option value="$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -258,10 +228,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="122" />
-    <option name="y" value="4" />
-    <option name="width" value="1014" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -281,6 +251,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="learn" type="58d84e3e:PackageViewProjectNode" />
+              <item name="platform" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -292,18 +274,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="learns" type="cbb8eebc:String" user="learns" />
               <item name="learns" type="cbb8eebc:String" user="learns" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="learn" type="58d84e3e:PackageViewProjectNode" />
-              <item name="platform" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -326,30 +296,6 @@
               <item name="platform" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="platform" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
@@ -379,8 +325,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="platform" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -397,27 +360,25 @@
     <property name="project.structure.side.proportion" value="0.40165442" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="de&#9;FILE&#9;file://D:/liuyihui/myProjects/IdeaProjects/java-webapp/platform/src/main/java/com/liuyihui/platform/controller/DemoController.java" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\person\java-webapp\platform\src\main\webapp\view\common" />
-      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\java\com\liuyihui\platform\repository" />
-      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\resources" />
-      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapps\springmvcdemo\src\main\webapp\WEB-INF" />
-      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapps\springmvcdemo\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.liuyihui.platform.repository" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\person\java-webapp\platform\src\main\webapp\view" />
+      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\webapp\view" />
       <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\resources" />
       <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\lrn-mybatis-4" />
       <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\lrn-mybatis-3" />
       <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\lrn-mybatis-2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.liuyihui.platform.repository" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\webapp\view" />
+      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\webapp\resources" />
+      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\webapp" />
+      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\webapp\WEB-INF" />
+      <recent name="D:\liuyihui\myProjects\IdeaProjects\java-webapp\platform\src\main\java\com\liuyihui\platform\repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -505,6 +466,54 @@
       <module name="main" />
       <envs />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" value="" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" value="" />
+      <option name="myWorkingDirectory" value="" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+    </configuration>
     <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -565,54 +574,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration default="true" type="XSLT" factoryName="XSLT">
-      <option name="myOutputFile" value="" />
-      <option name="myOpenOutputFile" value="false" />
-      <option name="myOpenInBrowser" value="false" />
-      <option name="mySmartErrorHandling" value="true" />
-      <option name="myRunnerPort" value="34873" />
-      <option name="myVmArguments" value="" />
-      <option name="myWorkingDirectory" value="" />
-      <option name="myModule" />
-      <option name="myJdk" />
-      <parameters />
-      <OutputType value="CONSOLE" save-to-file="false" />
-      <FileType name="XML" />
-      <JdkChoice value="FROM_MODULE" />
     </configuration>
     <configuration default="true" type="TomeeConfiguration" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
       <option name="LOCAL" value="false" />
@@ -779,14 +740,13 @@
       <workItem from="1512634442374" duration="3655000" />
       <workItem from="1512641000109" duration="6005000" />
       <workItem from="1513150175231" duration="432000" />
-      <workItem from="1513655517072" duration="40521000" />
-      <workItem from="1513867641588" duration="6491000" />
-      <workItem from="1514299031272" duration="159000" />
+      <workItem from="1513655517072" duration="63407000" />
+      <workItem from="1514300521060" duration="235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83991000" />
+    <option name="totallyTimeSpent" value="100462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,12 +765,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3217768" sideWeight="0.5021322" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4024256" sideWeight="0.6984479" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38156486" sideWeight="0.6984479" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3129689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.391258" sideWeight="0.6970021" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563966" sideWeight="0.6970021" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27173913" sideWeight="0.30299786" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -829,6 +789,36 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982263" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20151679" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.30155212" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3226152" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.60986066" sideWeight="0.6984479" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982263" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3129689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25171626" sideWeight="0.6970021" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27173913" sideWeight="0.30299786" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5101822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -846,27 +836,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springdemo/src/main/java/com/liuyihui/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvcdemo/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema-instance.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -905,17 +874,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lrn-mybatis-1/readme-1.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="170">
             <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1052,13 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="116" column="36" lean-forward="true" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/Controller1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1144,64 +1106,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/WEB-INF/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/login.html" />
+    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/resources/xxx.htm" />
+    <entry file="file://$PROJECT_DIR$/platform/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="140" column="42" lean-forward="true" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/service/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="215">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/Controller2.java">
+    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/login.html" />
+    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/index.html" />
+    <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/util/MyExceptionHandler.java" />
+    <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/advantage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="82" lean-forward="true" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/common/index.html" />
-    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platform/src/main/webapp/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="190">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform/src/main/java/com/liuyihui/platform/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="-413">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/platform/src/main/resources/springmvc-dispatcherServlet-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        <state relative-caret-position="1577">
+          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1284,7 +1246,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib1</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

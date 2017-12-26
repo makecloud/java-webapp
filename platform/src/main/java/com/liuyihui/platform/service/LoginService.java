@@ -30,6 +30,5 @@ public class LoginService {
         System.out.println(user.getPassword());
         return user;
 
-
     }
 }
