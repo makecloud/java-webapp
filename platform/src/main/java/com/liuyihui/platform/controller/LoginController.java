@@ -27,9 +27,19 @@ public class LoginController {
     @Resource
     private LoginService loginService;
 
+    /**
+     * 返回登录页面
+     *
+     * @return
+     */
     @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @RequestMapping("/doLogin")
     public @ResponseBody
-    ApiResponse login(
+    ApiResponse doLogin(
             @RequestParam("userName") String userName,
             @RequestParam("password") String password,
             ModelMap modelMap) {

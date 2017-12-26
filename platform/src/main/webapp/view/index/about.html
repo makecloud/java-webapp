@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>关于我们</title>
+  <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+<!--上部导航-->
+<header id="header">
+  <div class="header">
+    <!--logo-->
+    <div class="nav_logo">
+      <a href="index.html">
+        <i class="icon-logo"></i>
+      </a>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav">
+      <ul class="nav_stair">
+        <li class="nav_stairlist"><a href="index.html">首页</a></li>
+        <li class="nav_stairlist"><a href="advantage.html">优势</a></li>
+        <li class="nav_stairlist pro">
+          <a>产品体系</a>
+          <div class="pro_menu">
+            <ul class="pro_list">
+              <li><a href="../login/proMediaLogin.html">媒体主平台</a></li>
+              <li><a href="../login/proAdvLogin.html">广告主平台</a></li>
+              <li><a href="proDataAdmin.html">数据管理平台</a></li>
+              <li><a href="proAdvDeal.html">广告交易平台</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_stairlist"><a href="mediaResource.html">媒体资源库</a></li>
+        <li class="nav_stairlist"><a href="cooperation.html">合作案例</a></li>
+        <li class="nav_stairlist"><a href="news.html">新闻中心</a></li>
+        <li class="nav_stairlist"><a href="about.html" class="on">关于我们</a></li>
+      </ul>
+    </nav>
+    <!--登录按钮-->
+    <div class="h_login_btn">
+      <a href="../login/login.html" target="_blank" class="btn">登录</a>
+    </div>
+  </div>
+</header>
+<!--上部导航end-->
+
+<!--中间banner -->
+<div id="value">
+  <div class="value_box">
+    <h2>价值驱动</h2>
+    <p>打通线上线下数据链，用数据展示价值</p>
+  </div>
+</div>
+<!--介绍:关于我们,关于团队-->
+<div class="about bg1">
+  <div class="about_main">
+    <div class="about_pic">
+      <img src="resources/img/about-pic.jpg" alt="关于我们">
+    </div>
+    <div class="about_txt">
+      <h4>关于我们</h4>
+      <p>
+        奥凌OOHLink通过平台的标准化产品和大数据处理技术，为传统户外广告媒体快速赋能，使户外广告媒体达到媒体资源程序化购买、支持多元化人机互动、投放过程智能化监测、投放效果数据化分析、潜在意向用户二次线上投放等，打造户外广告产业的新生态，创造户外广告投放的智能化、互动化、平台化、数据化、生态化，实现户外广告媒体主和广告主的共赢新局面和线下营销的颠覆性价值。</p>
+    </div>
+  </div>
+</div>
+<div class="about bg2">
+  <div class="about_main join">
+    <div class="about_pic">
+      <img src="resources/img/about-team.jpg" alt="关于我们">
+    </div>
+    <div class="about_txt">
+      <h4>我们的团队</h4>
+      <p>
+        公司核心团队成员均来自阿里、高德、网易等顶级团队的资深专家，对于户外广告赋能革新的开创性需求的把控能力强，对于大数据技术平台的搭建也有着独到的敏锐性和专业的实现能力。团队科技氛围浓厚，开放、高效、专业，为合作伙伴和客户提供高质量的服务打下坚实基础。</p>
+      <a href="">加入我们</a>
+    </div>
+  </div>
+</div>
+<!--地图-->
+<div id="about_map">
+  <div class="about_map_box">
+    <div class="about_map_main">
+      <div class="about_top">
+        <h2>联系我们</h2>
+        <div class="cont_box1">
+          <span class="icon_box">
+            <i class="cont_icon1"></i>
+          </span>
+          010-1111-1111
+        </div>
+        <div class="cont_box2">
+          <span class="icon_box">
+            <i class="cont_icon2"></i>
+          </span>
+          abcdefg@name.com
+        </div>
+      </div>
+      <div class="about_bottom">
+        <ul class="about_list">
+          <li class="cont_join">
+            <span class="icon_box">
+              <i class="cont_icon3"></i>
+            </span>
+            广告投放合作
+          </li>
+          <li class="cont_join">
+            <span class="icon_box">
+              <i class="cont_icon3"></i>
+            </span>
+            媒体资源合作
+          </li>
+          <li class="cont_tel">李女士：18611100381</li>
+          <li class="cont_tel">张先生：18611680698</li>
+          <li class="cont_tel">杨女士：18610010833</li>
+        </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--底部:联系方式/版权-->
+<iframe src="footer.html" width="100%" height="550px" frameborder="0" id="f_iframe" name="f_ifream"
+        scrolling="no"></iframe>
+<!--底部:联系方式/版权end-->
+
+<script src="resources/js/jquery-3.2.1.js"></script>
+<script>
+  //产品体系二级菜单
+  $('.pro').hover(function () {
+    $('.pro_menu').css('display', 'block');
+  }, function () {
+    $('.pro_menu').css('display', 'none');
+  })
+
+</script>
+</body>
+</html>

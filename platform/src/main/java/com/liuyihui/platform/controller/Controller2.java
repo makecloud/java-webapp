@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 控制器学习示例二：
- * 
+ *
  * 下列方法全是提取HTTP请求项目的示范：
  * @author liuyh
  */

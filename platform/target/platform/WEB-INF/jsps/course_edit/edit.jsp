@@ -7,7 +7,7 @@
 <title>我不是真正的慕课网</title>
 
 <%-- <link rel="stylesheet"
-	href="<%=request.getContextPath()%>/resources/css/common.css"
+	href="<%=request.getContextPath()%>/resources/css/index.css"
 	type="text/css" /> --%>
 </head>
 <body>

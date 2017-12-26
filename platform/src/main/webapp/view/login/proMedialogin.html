@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>户外广告平台-广告主平台</title>
+  <link rel="stylesheet" href="resources/css/platform.css">
+  <style>
+    .media_right {
+      position: relative;
+    }
+
+    .error {
+      position: absolute;
+      left: 264px;
+      height: 22px;
+      padding: 0 8px;
+      line-height: 22px;
+      font-size: 12px;
+      color: #000;
+      text-align: center;
+      border-radius: 3px;
+      background: #ffb30c;
+      opacity: 0;
+    }
+    .error span{
+      display: block;
+      width: auto;
+      height: 22px;
+      line-height: 22px;
+    }
+  </style>
+</head>
+<body>
+<!--上部导航-->
+<header id="header">
+  <div class="header">
+    <!--logo-->
+    <div class="nav_logo">
+      <a href="../index/index.html">
+        <i class="icon-logo"></i>
+      </a>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav">
+      <ul class="nav_stair">
+        <li class="nav_stairlist"><a href="../index/index.html">首页</a></li>
+        <li class="nav_stairlist"><a href="../index/advantage.html">优势</a></li>
+        <li class="nav_stairlist pro">
+          <a class="on">产品体系</a>
+          <div class="pro_menu">
+            <ul class="pro_list">
+              <li><a href="proMediaLogin.html" class="c">媒体主平台</a></li>
+              <li><a href="proAdvLogin.html">广告主平台</a></li>
+              <li><a href="../index/proDataAdmin.html">数据管理平台</a></li>
+              <li><a href="../index/proAdvDeal.html">广告交易平台</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_stairlist"><a href="../index/mediaResource.html">媒体资源库</a></li>
+        <li class="nav_stairlist"><a href="../index/cooperation.html">合作案例</a></li>
+        <li class="nav_stairlist"><a href="../index/news.html">新闻中心</a></li>
+        <li class="nav_stairlist"><a href="../index/about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <!--登录按钮-->
+    <div class="h_login_btn">
+      <a href="login.html" target="_blank" class="btn">登录</a>
+    </div>
+  </div>
+</header>
+<!--上部导航 END-->
+<!--banner 登录-->
+<div id="media_login">
+  <div class="media_box">
+    <div class="media_left">
+      <h2>户外媒体智能化管理平台</h2>
+      <p>我们以先进的人工智能和大数据为核心，打造一站式户外广告媒体位管理平台，提供 SaaS服务，帮助户外媒体主降低销售、管理、维护成本，增加广告收入，提高户外媒体的核心竞争力。</p>
+    </div>
+    <div class="media_right">
+      <div class="media_content">
+        <ul class="media_msg">
+          <li class="medianame">
+            <span class="media_icon">
+              <i class="media_i1"></i>
+            </span>
+            <input type="text" class="mediauname" id="mediauname" placeholder="用户名" minlength="2" maxlength="12"
+                   autocomplete="off">
+          </li>
+          <li class="mediapwd">
+            <span class="media_icon">
+              <i class="media_i2"></i>
+            </span>
+            <input type="password" class="mediaupwd" id="mediaupwd" placeholder="密码" minlength="6" maxlength="12"
+                   autocomplete="off">
+          </li>
+          <li class="mediacode">
+            <span class="media_icon">
+              <i class="media_i3"></i>
+            </span>
+            <input type="text" class="mediaucode" id="mediaucode" placeholder="验证码" maxlength="4" autocomplete="off">
+            <span class="code_click"></span>
+          </li>
+          <li class="media_check_box">
+            <label class="media_pwd_btn">
+              <span class="media_pwd">
+                <i></i>
+              </span>
+              记住密码
+            </label>
+          </li>
+          <li class="media_login_btn">
+            <a href="../index/index.html" target="_blank">登录</a>
+          </li>
+          <li class="media_prompt">
+            <span class="media_prompt_register"><a href="register.html">立即注册</a></span>
+            <span class="media_prompt_pwd"><a href="forgetpwd.html">忘记密码</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="error">
+        <span class="error_text"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--banner 登录 END-->
+<!--我们提供-->
+<div id="afford">
+  <div class="afford_box">
+    <div class="common_top">
+      <h2>我们提供</h2>
+      <p>智能专业的户外媒体管理平台</p>
+    </div>
+    <div class="afford_bottom">
+      <ul class="afford_list">
+        <li>
+          <div class="afford_icon"><i class="afford_icon1"></i></div>
+          <h4>智能运维管理</h4>
+          <p>广告素材的智能上下刊、广告画面播放自动截屏、广告实时换画，定时插播、媒体位效果数据统计。</p>
+        </li>
+        <li>
+          <div class="afford_icon"><i class="afford_icon2"></i></div>
+          <h4>媒体价值评估</h4>
+          <p>通过大数据分析，提供动态的真实媒体数据报告，以此判断媒体位适合投放的广告类别，建立可衡量和评判的媒体价值定位。</p>
+        </li>
+        <li>
+          <div class="afford_icon"><i class="afford_icon3"></i></div>
+          <h4>联盟互赢生态</h4>
+          <p>广告主可优先选择已入驻的媒体主，广告流量。媒体入驻平台后，可将平台内的屏打包售卖，增加竞争力。</p>
+        </li>
+        <li>
+          <div class="afford_icon"><i class="afford_icon4"></i></div>
+          <h4>点位智能选址</h4>
+          <p>根据平台用户属性建立新媒体点位的选址，建立具有商业价值的新媒体点位。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--我们提供 END-->
+<!--户外媒体主合作-->
+<div id="outdoor_join">
+  <div class="outdoor_join_box">
+    <div class="common_top">
+      <h2>户外媒体主合作</h2>
+      <p>入驻平台即可增加广告收益</p>
+    </div>
+    <div class="outdoor_join_bottom">
+      <ul class="outdoor_join_list">
+        <li>
+          <div class="outdoor_join_icon"><i class="outdoor_join_i1"></i></div>
+          <h4>生活工作场景</h4>
+          <p>商圈电子广告牌、商业楼宇电子广告牌、电梯电子广告牌、智能贩卖机、智能快递柜、智能电视......</p>
+        </li>
+        <li>
+          <div class="outdoor_join_icon"><i class="outdoor_join_i2"></i></div>
+          <h4>娱乐场景</h4>
+          <p>KTV点歌机、影院屏幕、取票机、点菜机、超市电子广告牌......</p>
+        </li>
+        <li>
+          <div class="outdoor_join_icon"><i class="outdoor_join_i3"></i></div>
+          <h4>出行场景</h4>
+          <p>公交出租电子广告牌、地铁电子广告牌、机场电子广告牌、高铁电子广告牌、汽车站电子广告牌......</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--户外媒体主合作 END-->
+<!--户外媒体主合作流程-->
+<div id="flow_path">
+  <div class="flow_path_box">
+    <div class="common_top">
+      <h2>户外媒体主合作流程</h2>
+      <p>赋予户外媒体更多能量</p>
+    </div>
+    <div class="flow_path_bottom">
+      <ul class="flow_path_list">
+        <li>1、平台递交申请</li>
+        <li>2、审核通过（资质）</li>
+        <li>3、双方技术对接、培训</li>
+        <li>4、成为签约媒体</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--户外媒体主合作流程 END-->
+<!--底部:联系方式/版权-->
+<iframe src="../index/footer.html" width="100%" height="500px" frameborder="0" id="f_iframe" name="f_ifream" scrolling="no"></iframe>
+<!--底部:联系方式/版权end-->
+
+<script src="resources/js/jquery-3.2.1.js"></script>
+<script src="resources/js/jquery.cookie.js"></script>
+<script src="resources/js/proMediaLogin.js"></script>
+</body>
+</html>

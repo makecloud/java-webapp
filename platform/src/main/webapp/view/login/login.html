@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="css/platform.css">
+  <title>户外广告平台-登录</title>
+  <link rel="stylesheet" href="resources/css/platform.css">
   <style>
-    .login_main{
+    .login_box{
       position: relative;
+      width:660px;
     }
     .error{
       position: absolute;
-      left:414px;
+      left:532px;
+      top:100px;
       height: 24px;
       padding:0 8px;
       line-height: 24px;
@@ -18,8 +20,8 @@
       color: #000;
       text-align: center;
       border-radius: 3px;
-      background: #ffff00;
-      opacity:0;
+      background: #ffae15;
+      opacity: 0;
     }
   </style>
 </head>
@@ -27,7 +29,7 @@
 <div id="login">
   <div class="login_box">
     <div class="login_main">
-      <a href="../common/index.html" class="login_logo">
+      <a href="../index/index.html" class="login_logo">
         <i class="login_icon"></i>
       </a>
       <div class="login_content">
@@ -60,25 +62,25 @@
             </label>
           </li>
           <li class="login_btn">
-            <a href="../common/index.html" target="_blank">登录</a>
+            <a href="../index/index.html" target="_blank">登录</a>
           </li>
           <li class="prompt">
-            <span class="prompt_register"><a href="../common/register.html">立即注册</a></span>
-            <span class="prompt_pwd"><a href="../common/forgetpwd.html">忘记密码</a></span>
+            <span class="prompt_register"><a href="register.html">立即注册</a></span>
+            <span class="prompt_pwd"><a href="forgetpwd.html">忘记密码</a></span>
           </li>
         </ul>
       </div>
-      <div class="error">
-        <span class="error_text"></span>
-      </div>
     </div>
-
+    <div class="error">
+      <span class="error_text"></span>
+    </div>
   </div>
 </div>
 
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/jquery.cookie.js"></script>
-<script src="js/login.js"></script>
+
+<script src="resources/js/jquery-3.2.1.js"></script>
+<script src="resources/js/jquery.cookie.js"></script>
+<script src="resources/js/login.js"></script>
 </body>
 
 </html>

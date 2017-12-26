@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>户外广告平台-数据管理平台</title>
+  <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+<!--上部导航-->
+<header id="header">
+  <div class="header">
+    <!--logo-->
+    <div class="nav_logo">
+      <a href="index.html">
+        <i class="icon-logo"></i>
+      </a>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav">
+      <ul class="nav_stair">
+        <li class="nav_stairlist"><a href="index.html">首页</a></li>
+        <li class="nav_stairlist"><a href="advantage.html">优势</a></li>
+        <li class="nav_stairlist pro">
+          <a>产品体系</a>
+          <div class="pro_menu">
+            <ul class="pro_list">
+              <li><a href="../login/proMediaLogin.html">媒体主平台</a></li>
+              <li><a href="../login/proAdvLogin.html">广告主平台</a></li>
+              <li><a href="proDataAdmin.html">数据管理平台</a></li>
+              <li><a href="proAdvDeal.html">广告交易平台</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_stairlist"><a href="mediaResource.html">媒体资源库</a></li>
+        <li class="nav_stairlist"><a href="cooperation.html" class="on">合作案例</a></li>
+        <li class="nav_stairlist"><a href="news.html">新闻中心</a></li>
+        <li class="nav_stairlist"><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <!--登录按钮-->
+    <div class="h_login_btn">
+      <a href="../login/login.html" target="_blank" class="btn">登录</a>
+    </div>
+  </div>
+</header>
+<!--上部导航end-->
+<!--中间banner-->
+<div id="cooperation_banner">
+  <div class="cooperation_banner_text">
+    <h2>合作案例</h2>
+  </div>
+</div>
+<!--中间banner END-->
+<!--案例展示-->
+<div id="cooperation_case">
+  <div class="cooperation_case_box">
+    <ul class="cooperation_case_list">
+      <li>
+        <a href="cooperation/cooperation-bjcar.html"><img src="resources/img/case1.jpg" alt="北京现代">
+          <h2>北京现代</h2>
+          <p>策略素材设置，通过红包造势多角度吸引受众</p>
+        </a>
+      </li>
+      <li>
+        <a href="cooperation/cooperation-travel.html">
+          <img src="resources/img/case2.jpg" alt="太易旅游">
+          <h2>太易旅游 </h2>
+          <p>旅游广告出花样，线上线下跨屏玩转ing</p>
+        </a>
+      </li>
+      <li>
+        <a href=""><img src="resources/img/case3.jpg" alt="">
+          <h2>蜜色之吻</h2>
+          <p>蜜色之吻线上线下重复触达，打响内衣品牌营销战</p>
+        </a>
+      </li>
+      <li>
+        <a href=""><img src="resources/img/case4.jpg" alt="">
+          <h2>太平洋咖啡</h2>
+          <p>精准的户外广告位选址，触达更多的目标有效人群</p>
+        </a>
+      </li>
+      <li>
+        <a href=""><img src="resources/img/case5.jpg" alt="">
+          <h2>南京新街口多广告投放</h2>
+          <p>多策略定制，多品牌灵活交替曝光</p>
+        </a>
+      </li>
+      <li>
+        <a href=""><img src="resources/img/case6.jpg" alt="">
+          <h2>荣威汽车</h2>
+          <p>天猫首发广告直播震撼来袭</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--案例展示 END-->
+<!--底部:联系方式/版权-->
+<iframe src="footer.html" width="100%" height="550px" frameborder="0" id="f_iframe" name="f_ifream"
+        scrolling="no"></iframe>
+<!--底部:联系方式/版权 END-->
+
+</body>
+<script src="resources/js/jquery-3.2.1.js"></script>
+<script>
+  //产品体系二级菜单
+  $('.pro').hover(function () {
+    $('.pro_menu').css('display', 'block');
+  }, function () {
+    $('.pro_menu').css('display', 'none');
+  })
+</script>
+</html>

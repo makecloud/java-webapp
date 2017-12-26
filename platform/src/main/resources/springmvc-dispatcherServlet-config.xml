@@ -29,7 +29,7 @@
     <mvc:annotation-driven/>
 
     <!-- 静态资源处理， css， js， imgs -->
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <mvc:resources mapping="/view/common/**" location="/view/common/"/>
 
 
     <!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
@@ -54,8 +54,20 @@
     <!-- 配置视图解析器bean， -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/WEB-INF/jsps/"/>
+        <property name="prefix" value="/view/"/>
         <property name="suffix" value=".jsp"/>
+    </bean>
+    <!-- html视图解析器 必须先配置freemarkerConfig,注意html是没有prefix前缀属性的-->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath">
+            <value>/view/</value>
+        </property>
+    </bean>
+    <bean id="htmlviewResolver"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="suffix" value=".html" />
+        <property name="order" value="0" />
+        <property name="contentType" value="text/html;charset=UTF-8" />
     </bean>
 
 

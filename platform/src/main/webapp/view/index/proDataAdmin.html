@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>户外广告平台-数据管理平台</title>
+  <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+<!--上部导航-->
+<header id="header">
+  <div class="header">
+    <!--logo-->
+    <div class="nav_logo">
+      <a href="index.html">
+        <i class="icon-logo"></i>
+      </a>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav">
+      <ul class="nav_stair">
+        <li class="nav_stairlist"><a href="index.html">首页</a></li>
+        <li class="nav_stairlist"><a href="advantage.html">优势</a></li>
+        <li class="nav_stairlist pro">
+          <a class="on">产品体系</a>
+          <div class="pro_menu">
+            <ul class="pro_list">
+              <li><a href="../login/proMediaLogin.html">媒体主平台</a></li>
+              <li><a href="../login/proAdvLogin.html">广告主平台</a></li>
+              <li><a href="proDataAdmin.html" class="c">数据管理平台</a></li>
+              <li><a href="proAdvDeal.html">广告交易平台</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_stairlist"><a href="mediaResource.html">媒体资源库</a></li>
+        <li class="nav_stairlist"><a href="cooperation.html">合作案例</a></li>
+        <li class="nav_stairlist"><a href="news.html">新闻中心</a></li>
+        <li class="nav_stairlist"><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <!--登录按钮-->
+    <div class="h_login_btn">
+      <a href="../login/login.html" target="_blank" class="btn">登录</a>
+    </div>
+  </div>
+</header>
+<!--上部导航end-->
+<!--中间banner-->
+<div id="data_banner">
+  <div class="data_banner_box">
+    <h2>DMP数据平台</h2>
+    <p>集多源媒体与海量人群受众于一体，通过大数据挖掘与智能分析，构建媒体
+    </p>
+    <p>与人群的分析体系，优化广告投放、提升营销效果。</p>
+  </div>
+</div>
+<!--中间banner END-->
+<!--我们提供-->
+<div id="data_provide">
+ <div class="data_provide_box">
+   <div class="data_provide_top">
+     <h2>我们提供</h2>
+     <p>智能精准的数据分析平台</p>
+   </div>
+   <div class="data_provide_bottom">
+     <ul class="data_provide_list">
+       <li class="data_provide_cont1">
+         <div class="data_provide_txt">
+           <h4>智能位置选址</h4>
+           <p>通过大数据服务，精准分析人群的来源、去向与精准的人群画像，为企业的选址提供智能支持。</p>
+         </div>
+         <div class="data_provide_img">
+           <i class="data_icon1"></i>
+         </div>
+       </li>
+       <li class="data_provide_cont2">
+         <div class="data_provide_txt">
+           <h4>精准人群受众画像</h4>
+           <p>基于自身数据、第三方数据，利用大数据分析技术，精准的分析受众人群线上、线下的行为，构建精准的用户画像体系，为广告主精准锁定目标受众。</p>
+         </div>
+         <div class="data_provide_img">
+           <i class="data_icon2"></i>
+         </div>
+       </li>
+
+       <li class="data_provide_cont1">
+         <div class="data_provide_txt">
+           <h4>实时场景人群感知</h4>
+           <p>基于地理围栏，实时感知当前场景下的人群，结合大数据人群画像体系，为目标用户提供精准的广告内容，实现广告的精准高效的投放。</p>
+         </div>
+         <div class="data_provide_img">
+           <i class="data_icon3"></i>
+         </div>
+       </li>
+       <li class="data_provide_cont2">
+         <div class="data_provide_txt">
+           <h4>优质媒体智能推荐</h4>
+           <p>依据大数据分析能力，智能分析媒体位特征，为不同广告主高度匹配适合投放的媒体点位，媒体标签1600多个。</p>
+         </div>
+         <div class="data_provide_img">
+           <i class="data_icon4"></i>
+         </div>
+       </li>
+
+       <li class="data_provide_cont1">
+         <div class="data_provide_txt">
+           <h4>根据天气变化，实时下发素材</h4>
+           <p>与国家气象局合作，获取实时天气接口，通过实时天气的变化，可下发不同的广告素材。</p>
+         </div>
+         <div class="data_provide_img">
+           <i class="data_icon5"></i>
+         </div>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<!--我们提供 END-->
+<!--底部:联系方式/版权-->
+<iframe src="footer.html" width="100%" height="550px" frameborder="0" id="f_iframe" name="f_ifream" scrolling="no"></iframe>
+<!--底部:联系方式/版权 END-->
+
+</body>
+<script src="resources/js/jquery-3.2.1.js"></script>
+<script>
+  //产品体系二级菜单
+  $('.pro').hover(function () {
+    $('.pro_menu').css('display', 'block');
+  }, function () {
+    $('.pro_menu').css('display', 'none');
+  })
+</script>
+</html>
