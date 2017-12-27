@@ -24,9 +24,28 @@ public class LoginController {
     @Resource
     private LoginService loginService;
 
+    /**
+     * 进首页
+     *
+     * @param user
+     * @return
+     */
+    @RequestMapping("/index")
+    public String index(@ModelAttribute("user") User user) {
+        return "index";
+    }
+
+    /**
+     * 进登录页
+     *
+     * @param modelMap
+     * @return
+     */
     @RequestMapping("/login")
     public String login(ModelMap modelMap) {
-        //
+        //如果session中有user对象,spring会在调用方法前,将user对象放入本次请求范围的modelMap.spring会将请求范围的model放到参数mode中
+        //目前认识到model和modelMap一样
+        //判断model有user对象,则返回首页
         if (modelMap.containsAttribute("user")) {
             System.out.println("已登录过");
             return "index";
@@ -34,7 +53,15 @@ public class LoginController {
         return "login";
     }
 
-
+    /**
+     * 登录
+     *
+     * @param userName
+     * @param password
+     * @param modelMap
+     * @param session
+     * @return
+     */
     @RequestMapping("/dologin")
     public @ResponseBody
     ApiResponse login(
@@ -93,7 +120,6 @@ public class LoginController {
         }*/
         session.removeAttribute("user");
         sessionStatus.setComplete();//这个方法告诉了springmvc清除session中的所有属性了
-
         return "index";
     }
 

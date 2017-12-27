@@ -12,12 +12,13 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
     @Override
     public ModelAndView resolveException(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) {
 
+        //打印异常信息堆栈
+//        e.printStackTrace();
         //session异常,跳转到登录页面
         if (e instanceof HttpSessionRequiredException) {
             return new ModelAndView("login");
         }
-
         //未分配modelAndView的的异常
-        return new ModelAndView("error");
+        return new ModelAndView("commonErrorPage");
     }
 }

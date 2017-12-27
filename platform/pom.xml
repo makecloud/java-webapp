@@ -163,6 +163,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <!--解决类包中的xml文件输出不到classes文件夹下的问题-->
         <resources>
             <resource>
                 <directory>src/main/java</directory>
