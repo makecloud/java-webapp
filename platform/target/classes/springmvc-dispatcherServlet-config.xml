@@ -32,6 +32,9 @@
     <mvc:resources mapping="/view/common/**" location="/view/common/"/>
 
 
+    <!--配置异常处理-->
+    <bean id="exceptionHandler" class="com.liuyihui.platform.util.MyExceptionHandler"/>
+
     <!-- 配置ViewResolver。 可以用多个ViewResolver。 使用order属性排序。 InternalResourceViewResolver放在最后。 -->
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="order" value="1"/>
@@ -51,25 +54,44 @@
         <property name="ignoreAcceptHeader" value="true"/>
     </bean>
 
-    <!-- 配置视图解析器bean， -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/view/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
-    <!-- html视图解析器 必须先配置freemarkerConfig,注意html是没有prefix前缀属性的-->
+    <!--freemaker解析器作为html视图解析器-->
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-        <property name="templateLoaderPath">
-            <value>/view/</value>
+        <property name="templateLoaderPath" value="/view/"/>
+        <property name="freemarkerSettings">
+            <props>
+                <prop key="template_update_delay">0</prop>
+                <prop key="default_encoding">UTF-8</prop>
+                <prop key="number_format">0.##########</prop>
+                <prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+                <prop key="classic_compatible">true</prop>
+                <prop key="template_exception_handler">ignore</prop>
+            </props>
         </property>
     </bean>
-    <bean id="htmlviewResolver"
-          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="suffix" value=".html" />
-        <property name="order" value="0" />
-        <property name="contentType" value="text/html;charset=UTF-8" />
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
+        <property name="exposeRequestAttributes" value="true"/>
+        <property name="exposeSessionAttributes" value="true"/>
+        <property name="allowSessionOverride" value="true"/>
+        <property name="contentType" value="text/html; charset=UTF-8"/>
+        <property name="cache" value="true"/>
+        <!--这里需要注意一下，我注释了下面这样一行代码，这行代码的意思就是指引freemarker需要解析的文件的位置。注释掉原因是因为
+         上面freemarkerConfig bean中的 <property name="templateLoaderPath" value="/WEB-INF/views/" />
+         已经指定了视图位置。如果我们这里依然保留下方代码，页面回报404找不到的错误 -->
+        <!--<property name="prefix" value="/WEB-INF/views/" />-->
+        <property name="suffix" value=".html"/>
+        <property name="order" value="2"/>
     </bean>
 
+
+    <!-- 配置视图解析器bean，jsp视图解析器, 这个只能解析jsp了-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
+        <property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView"/><!--据说不要使用jstl-->
+        <property name="prefix" value="/WEB-INF/jsps/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="order" value="3"/>
+    </bean>
 
     <!--200*1024*1024即200M resolveLazily属性启用是为了推迟文件解析，以便捕获文件大小异常 -->
     <bean id="multipartResolver"

@@ -31,6 +31,7 @@
     <!-- 静态资源处理， css， js， imgs -->
     <mvc:resources mapping="/view/common/**" location="/view/common/"/>
 
+
     <!--配置异常处理-->
     <bean id="exceptionHandler" class="com.liuyihui.platform.util.MyExceptionHandler"/>
 
@@ -91,19 +92,6 @@
         <property name="suffix" value=".jsp"/>
         <property name="order" value="3"/>
     </bean>
-    <!-- html视图解析器 必须先配置freemarkerConfig,注意html是没有prefix前缀属性的-->
-    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-        <property name="templateLoaderPath">
-            <value>/view/</value>
-        </property>
-    </bean>
-    <bean id="htmlviewResolver"
-          class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="suffix" value=".html" />
-        <property name="order" value="0" />
-        <property name="contentType" value="text/html;charset=UTF-8" />
-    </bean>
-
 
     <!--200*1024*1024即200M resolveLazily属性启用是为了推迟文件解析，以便捕获文件大小异常 -->
     <bean id="multipartResolver"
