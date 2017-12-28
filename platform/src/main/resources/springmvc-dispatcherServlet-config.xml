@@ -29,7 +29,7 @@
     <mvc:annotation-driven/>
 
     <!-- 静态资源处理， css， js， imgs -->
-    <mvc:resources mapping="/view/common/**" location="/view/common/"/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
 
     <!--配置异常处理-->

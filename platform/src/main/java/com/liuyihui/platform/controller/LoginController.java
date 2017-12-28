@@ -24,6 +24,11 @@ public class LoginController {
     @Resource
     private LoginService loginService;
 
+    @RequestMapping("/")
+    public String begin() {
+        return "redirect:resources/index/index.html";
+    }
+
     /**
      * 进首页
      *
