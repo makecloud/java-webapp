@@ -32,7 +32,7 @@ public class LoginController {
      */
     @RequestMapping("/index")
     public String index(@ModelAttribute("user") User user) {
-        return "index";
+        return "index/index";
     }
 
     /**
@@ -48,9 +48,9 @@ public class LoginController {
         //判断model有user对象,则返回首页
         if (modelMap.containsAttribute("user")) {
             System.out.println("已登录过");
-            return "index";
+            return "index/index";
         }
-        return "login";
+        return "login/login";
     }
 
     /**
@@ -120,7 +120,7 @@ public class LoginController {
         }*/
         session.removeAttribute("user");
         sessionStatus.setComplete();//这个方法告诉了springmvc清除session中的所有属性了
-        return "index";
+        return "login";
     }
 
 }

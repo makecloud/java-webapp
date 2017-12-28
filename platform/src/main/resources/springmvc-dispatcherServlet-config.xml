@@ -9,7 +9,7 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!-- 本配置文件是供名为mvc-dispatcher的DispatcherServlet使用， 提供其相关的Spring MVC配置 -->
+    <!-- 本配置文件供名为mvc-dispatcher的DispatcherServlet使用， 提供其相关的Spring MVC配置 -->
 
     <!--注解和自动扫描配置转移到applicationContext.xml中了-->
     <!-- 启用Spring基于annotation的DI, 使用户可以在Spring MVC中使用Spring的强大功能。 激活 @Required 
