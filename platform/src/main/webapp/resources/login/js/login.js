@@ -94,28 +94,27 @@ login_btn.click(function (e) {
         //ajax请求后台验证用户名是否存在,密码是否正确
         //如果密码正确
         $.ajax({
-            url: 'localhost:8080/platform/dologin',
+            url: 'htpp://localhost:8080/platform/dologin',
             type: 'post',
-            dataType:'jsonp',
-            jsonp:'callback',
+            dataType: 'json',
             data: {
                 userName: uname.val(),
                 password: upwd.val()
             },
-
             //请求成功
             success: function (data) {
                 //如果用户不存在:提示用户不存在;如果用户存在:则判断密码正确性
-                if (data.code == 0) {
+                if (data.code == 9999) {
                     e.preventDefault();
-                    alert('该用户名不存在,请先去注册!');
-                } else if (data.code == 1) {//存在:密码不正确,则提示密码不正确
+                    var msg = data.msg;
+                    alert(msg);
+                } else if (data.code == 8888) {//存在:密码不正确,则提示密码不正确
                     e.preventDefault();
                     error_text.html('密码不正确,请重新输入!');
                     error.css('top', '358px');
                     error.animate({'opacity': '1'}, 300);
                     timer();
-                } else {
+                } else if (data.code == 0) {
                     //密码正确,则判断是否勾选了记住密码:如勾选,则把用户名密码写入cookie
                     if (r_bg.hasClass('r_pwd_yes')) {
                         $.cookie('username', uname.val(), {expires: 30});
