@@ -118,10 +118,51 @@
   </li>
 </ul>
 <!--内容end-->
+
 <!--底部:联系方式/版权-->
 <iframe src="footer.html" width="100%" height="550px" frameborder="0" id="f_iframe" name="f_ifream"
         scrolling="no"></iframe>
 <!--底部:联系方式/版权end-->
+
+<!--右侧悬浮的qq微信等-->
+<div id="right_xf">
+  <!--电话-->
+  <span>
+    <a href="javascript:;">
+      <i class="xf_icon1"></i>
+    </a>
+    <div class="xftel xf_c">010-1111-1111</div>
+  </span>
+  <!--qq-->
+  <span>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=760612423&site=qq&menu=yes">
+      <i class="xf_icon2" ></i>
+    </a>
+  </span>
+  <!--微博-->
+  <span>
+    <a href="javascript:;">
+      <i class="xf_icon3"></i>
+    </a>
+    <div class="xfwb xf_wb xf_c">
+      <img src="../../resources/indexRes/img/wbewm.jpg">
+      扫码关注新浪微博
+    </div>
+  </span>
+  <!--微信-->
+  <span>
+    <a href="javascript:;" class="xf4">
+      <i class="xf_icon4"></i>
+    </a>
+    <div class="xfwx xf_c">
+      <img src="../../resources/indexRes/img/wxewm.jpg">
+      扫码关注微信公众号
+    </div>
+  </span>
+</div>
+<!--右侧悬浮 END-->
+
+
 <script src="../../resources/indexRes/js/jquery-3.2.1.js"></script>
 <script>
   //产品体系二级菜单
@@ -130,6 +171,18 @@
   }, function () {
     $('.pro_menu').css('display', 'none');
   })
+  //右侧悬浮
+  $('#right_xf span').hover(
+      function () {
+          $(this).children('a').css('background', '#007fff');
+          $(this).children('.xf_c').stop(false,true).animate({'left': '-160px'}, 500);
+          $(this).siblings('span').children('.xf_c').stop(false,true).animate({'left': '0'}, 1000);
+      }, function () {
+          $(this).children('a').css('background', 'rgb(13, 31, 65)');
+          $(this).children('.xf_c').stop(false,true).animate({'left': '0'}, 500);
+      }
+  )
+
 </script>
 </body>
 </html>

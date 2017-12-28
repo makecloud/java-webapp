@@ -1312,3 +1312,89 @@ input {
   margin: 10px;
   color: #000;
 }
+
+/*-----------------------------------------右侧悬浮----------------------------------------*/
+#right_xf{
+  position: fixed;
+  /*top:0;*/
+  right: 0;
+  bottom:200px;
+  z-index: 999999;
+
+}
+#right_xf span{
+  width: 60px;
+  height: 61px;
+  display: block;
+  position: relative;
+}
+
+#right_xf span a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-bottom: 1px solid #465571;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  z-index: 666;
+  background:rgb(13, 31, 65);
+}
+.xf4{
+  border: none!important;
+}
+#right_xf span a i{
+  display: inline-block;
+  vertical-align: middle;
+}
+.xf_icon1,.xf_icon2,.xf_icon3,.xf_icon4{
+  background: url("../img/icons-ex.png");
+}
+.xf_icon1{
+  width: 30px;
+  height: 30px;
+  background-position: -4231px 0;
+}
+.xf_icon2{
+  width: 27px;
+  height: 27px;
+  background-position: -4261px 0;
+}
+.xf_icon3{
+  width: 30px;
+  height: 30px;
+  background-position: -4288px 0;
+}
+.xf_icon4{
+  width: 30px;
+  height: 27px;
+  background-position: -4318px 0;
+}
+
+.xftel{
+  position: absolute;
+  top:0;
+  z-index:555;
+  left:0;
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  background: #007fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 18px;
+  text-align: center;
+}
+.xfwb,.xfwx{
+  position: absolute;
+  top:-116px;
+  left:0;
+  width: 159px;
+  background: #e8e8e8;
+  text-align: center;
+  padding:12px 0;
+  color: #707070;
+}
+.xfwb img,.xfwx img{
+  margin:0 15px;
+}

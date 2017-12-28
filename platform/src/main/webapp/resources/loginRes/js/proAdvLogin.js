@@ -142,6 +142,17 @@ function timer() {
 
 }
 
+//右侧悬浮
+$('#right_xf span').hover(
+    function () {
+        $(this).children('a').css('background', '#007fff');
+        $(this).children('.xf_c').stop(false,true).animate({'left': '-160px'}, 500);
+        $(this).siblings('span').children('.xf_c').stop(false,true).animate({'left': '0'}, 1000);
+    }, function () {
+        $(this).children('a').css('background', 'rgb(13, 31, 65)');
+        $(this).children('.xf_c').stop(false,true).animate({'left': '0'}, 500);
+    }
+)
 
 
 

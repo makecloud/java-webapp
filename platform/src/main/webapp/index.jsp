@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>户外广告平台-首页</title>
+    <link rel="stylesheet" href="resources/indexRes/css/index.css">
 </head>
 <body>
 <!--上部导航-->
@@ -12,25 +12,35 @@
     <div class="header">
         <!--logo-->
         <div class="nav_logo">
-            <a href="index.html">
+            <a href="index.jsp">
                 <i class="icon-logo"></i>
             </a>
         </div>
         <!--导航菜单-->
         <nav class="nav">
             <ul class="nav_stair">
-                <li class="nav_stairlist"><a href="#" class="on">首页</a></li>
+                <li class="nav_stairlist"><a href="index.jsp" class="on">首页</a></li>
                 <li class="nav_stairlist"><a href="advantage.html">优势</a></li>
-                <li class="nav_stairlist"><a href="#">产品中心</a></li>
-                <li class="nav_stairlist"><a href="">媒体资源库</a></li>
-                <li class="nav_stairlist"><a href="">合作案例</a></li>
-                <li class="nav_stairlist"><a href="">新闻中心</a></li>
-                <li class="nav_stairlist"><a href="">联系我们</a></li>
+                <li class="nav_stairlist pro">
+                    <a>产品体系</a>
+                    <div class="pro_menu">
+                        <ul class="pro_list">
+                            <li><a href="../login/proMedialogin.html">媒体主平台</a></li>
+                            <li><a href="../login/proAdvLogin.html">广告主平台</a></li>
+                            <li><a href="proDataAdmin.html">数据管理平台</a></li>
+                            <li><a href="proAdvDeal.html">广告交易平台</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_stairlist"><a href="mediaResource.html">媒体资源库</a></li>
+                <li class="nav_stairlist"><a href="cooperation.html">合作案例</a></li>
+                <li class="nav_stairlist"><a href="news.html">新闻中心</a></li>
+                <li class="nav_stairlist"><a href="about.html">关于我们</a></li>
             </ul>
         </nav>
         <!--登录按钮-->
-        <div class="login_btn">
-            <button class="btn">登录</button>
+        <div class="h_login_btn">
+            <a href="../login/login.html" target="_blank" class="btn">登录</a>
         </div>
     </div>
 </header>
@@ -41,7 +51,7 @@
     <div id="b_list" class="b_list">
         <div class="img_text">
             <div class="i_up" style="">
-                <img src="img/banner1.jpg">
+                <img src="resources/indexRes/img/banner1.jpg">
             </div>
             <div class="b_text" style="">
                 <p class="b_text1" style="top:0">为线下屏幕赋能科技</p>
@@ -51,7 +61,7 @@
         </div>
         <div class="img_text">
             <div class="i_up" style="display: none">
-                <img src="img/banner2.jpg">
+                <img src="resources/indexRes/img/banner2.jpg">
             </div>
             <div class="b_text" style="display: none">
                 <p class="b_text1" style="top:80px">数据驱动的户外3.0时代</p>
@@ -61,7 +71,7 @@
         </div>
         <div class="img_text">
             <div class="i_up" style="display: none">
-                <img src="img/banner3.jpg">
+                <img src="resources/indexRes/img/banner3.jpg">
             </div>
             <div class="b_text" style="display: none">
                 <p class="b_text1" style="top:80px">场景沉浸式的闭环营销模式</p>
@@ -106,32 +116,32 @@
         <h2>我们的优势</h2>
         <div class="roundabout">
             <div class="roundabout_box">
-                <ul id="">
+                <ul>
                     <li>
-                        <img src="img/advantage1.jpg">
+                        <img src="resources/indexRes/img/advantage1.jpg">
                         <div class="adv_text">
                             <h4>线下生活场景全域覆盖,<br>碎片化广告投放 </h4>
                             <div class="adv_line"><span></span></div>
                             <p>对线下220多个城市的屏幕进行整合，覆盖电影院、写字楼、高档小区、商场等多个场景，实现广告的多区域、多场景、碎片化精准投放；低成本、大冲击，短时间内达到“爆炸式”的媒体传播效果。</p>
-                            <a href="" class="adv_btn">查看更多</a>
+                            <a href="advantage.html" class="adv_btn">查看更多</a>
                         </div>
                     </li>
                     <li>
-                        <img src="img/advantage2.jpg">
+                        <img src="resources/indexRes/img/advantage2.jpg">
                         <div class="adv_text">
                             <h4>全面洞察潜在用户，<br>智能场景化精准定位 </h4>
                             <div class="adv_line"><span></span></div>
                             <p>智能感知户外受众人群，并对人群进行多维度的定向分析，智能场景化，帮助广告主更好地触达目标人群，让潜在用户人群服务于线下场景，通过人群定向智能选择线下媒体广告位。</p>
-                            <a href="" class="adv_btn">查看更多</a>
+                            <a href="advantage.html" class="adv_btn">查看更多</a>
                         </div>
                     </li>
                     <li>
-                        <img src="img/advantage3.jpg">
+                        <img src="resources/indexRes/img/advantage3.jpg">
                         <div class="adv_text">
                             <h4>剩余广告位灵活发布，<br>多策略定制 </h4>
                             <div class="adv_line"><span></span></div>
                             <p>根据客户传播需求及媒体空置情况，在多个空闲位交替发布；同时根据人群、时段、天气等定向策略，智能下发广告素材，根据不同的广告策略在平台选择不同的广告素材，高度宣传、密集曝光。</p>
-                            <a href="" class="adv_btn">查看更多</a>
+                            <a href="advantage.html" class="adv_btn">查看更多</a>
                         </div>
                     </li>
                 </ul>
@@ -152,7 +162,7 @@
                 <div class="product_text">
                     <h4>媒体主平台</h4>
                     <span>户外媒体主工作台，免费智能化媒体位管理，大数据赋能媒体位，致力提高户外媒体位管理效率和广告收益。</span>
-                    <a href="" class="">开始使用</a>
+                    <a href="../login/proMedialogin.html">开始使用</a>
                 </div>
             </div>
             <div class="my_product4">
@@ -160,7 +170,7 @@
                 <div class="product_text">
                     <h4>广告主平台</h4>
                     <span>户外广告程序化投放平台，在线投放户外广告，过程简单操作便利；利用人工智能+大数据工具实现户外媒体精准投放，提供详细的投放效果分析，实现线下营销新生态。</span>
-                    <a href="" class="">开始使用</a>
+                    <a href="../login/proAdvLogin.html">开始使用</a>
                 </div>
             </div>
             <div class="my_product4">
@@ -168,7 +178,7 @@
                 <div class="product_text">
                     <h4>数据管理平台</h4>
                     <span>集多场景媒体资源位和海量人群数据于一体，通过大数据分析与挖掘技术，实现媒体资源的整合与管理、多维度的人群标签体系的建立，为广告的精准投放及多渠道应用提供数据和技术支撑。</span>
-                    <a href="" class="">开始使用</a>
+                    <a href="proDataAdmin.html">开始使用</a>
                 </div>
             </div>
             <div class="my_product4">
@@ -176,7 +186,7 @@
                 <div class="product_text">
                     <h4>O-Exchange平台</h4>
                     <span>打破传统户外媒体的局限，解决每个行业投放广告都有不同的诉求，创造户外广告投放的智能化、互动化、平台化、数据化、生态化，实现户外广告媒体主和广告主的共赢新局面和线下营销的颠覆性价值。</span>
-                    <a href="" class="">开始使用</a>
+                    <a href="proAdvDeal.html">开始使用</a>
                 </div>
             </div>
         </div>
@@ -192,24 +202,23 @@
                 <h4>北京现代</h4>
                 <p>4月随着车展的增多，新车的上市，将会涌入一大批购车人群，利用五一小长假前后，锁定南京新街口人群密集区，有效保证了新街口人群关注和及传播效果，树立和强化企业的品牌影响力。
                     收集潜在客户的数据线索，迅速有效地将告知并引导客户到店体验，提升这些人群对北京现代的认知和喜爱。</p>
-                <a href="" class="case_look">查看更多</a>
+                <a href="cooperation/cooperation-bjcar.html" class="case_look">查看更多</a>
             </dt>
             <dd class="case_r">
-                <img src="img/case-car.jpg">
+                <img src="resources/indexRes/img/case-car.jpg">
             </dd>
         </dl>
         <dl class="case_data">
             <dt class="case_l1">
                 <h4>蜜色之吻</h4>
-                <p>伴随着时代发展，线上线下相结合的营销方式出现，主流消费群体更倾向于线上消费（即电商）。熟悉网购的多是年轻消费者，根据数据显示，这些新生代的年轻消费群体很少去到内衣店消费，更多是采取网购的形式。
-                    蜜色之吻如何在众内衣、众电商中脱颖而出，是我们此次传播的重点，通过本次广告传播挖掘关注内衣、有购买欲望的目标人群，进行精准投放。</p>
-                <a href="" class="case_look">查看更多</a>
+                <p>伴随着时代发展，线上线下相结合的营销方式出现，主流消费群体更倾向于线上消费（即电商）。熟悉网购的多是年轻消费者，根据数据显示，这些新生代的年轻消费群体很少去到内衣店消费，更多是采取网购的形式。蜜色之吻如何在众内衣、众电商中脱颖而出，是我们此次传播的重点，通过本次广告传播挖掘关注内衣、有购买欲望的目标人群，进行精准投放。</p>
+                <a href="cooperation/cooperation-mszw.html" class="case_look">查看更多</a>
             </dt>
             <dd class="case_r1">
-                <img src="img/case-clothes.jpg">
+                <img src="resources/indexRes/img/case-clothes.jpg">
             </dd>
         </dl>
-        <div class="more_case"><a href="">更多案例>></a></div>
+        <div class="more_case"><a href="cooperation.html">更多案例>></a></div>
     </div>
 </div>
 <!--推广案例数据end-->
@@ -217,10 +226,10 @@
 <div id="partner">
     <div class="partner_box">
         <ul class="partner_slide">
-            <li class="partner_img"><img src="img/partner1.jpg"></li>
-            <li class="partner_img"><img src="img/partner2.jpg"></li>
-            <li class="partner_img"><img src="img/partner3.jpg"></li>
-            <li class="partner_img"><img src="img/partner4.jpg"></li>
+            <li class="partner_img"><img src="resources/indexRes/img/partner1.jpg"></li>
+            <li class="partner_img"><img src="resources/indexRes/img/partner2.jpg"></li>
+            <li class="partner_img"><img src="resources/indexRes/img/partner3.jpg"></li>
+            <li class="partner_img"><img src="resources/indexRes/img/partner4.jpg"></li>
         </ul>
         <div class="partner_btn">
             <span class="pbtnColor"></span>
@@ -232,12 +241,49 @@
 </div>
 <!--合作伙伴end-->
 <!--底部:联系方式/版权-->
-<iframe src="footer.html" width="100%" height="500px" frameborder="0" id="f_iframe" name="f_ifream" scrolling="no"></iframe>
+<iframe src="footer.html" width="100%" height="550px" frameborder="0" id="f_iframe" name="f_ifream" scrolling="no"></iframe>
 <!--底部:联系方式/版权end-->
 
-<script src="commonjs/jquery-3.2.1.js"></script>
-<script src="js/index.js"></script>
-<script src="commonjs/roundabout.js"></script>
+<!--右侧悬浮的qq微信等-->
+<div id="right_xf">
+    <!--电话-->
+    <span>
+    <a href="javascript:;">
+      <i class="xf_icon1"></i>
+    </a>
+    <div class="xftel xf_c">010-1111-1111</div>
+  </span>
+    <!--qq-->
+    <span>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=760612423&site=qq&menu=yes">
+      <i class="xf_icon2" ></i>
+    </a>
+  </span>
+    <!--微博-->
+    <span>
+    <a href="javascript:;">
+      <i class="xf_icon3"></i>
+    </a>
+    <div class="xfwb xf_wb xf_c">
+      <img src="resources/indexRes/img/wbewm.jpg">
+      扫码关注新浪微博
+    </div>
+  </span>
+    <!--微信-->
+    <span>
+    <a href="javascript:;" class="xf4">
+      <i class="xf_icon4"></i>
+    </a>
+    <div class="xfwx xf_c">
+      <img src="resources/indexRes/img/wxewm.jpg">
+      扫码关注微信公众号
+    </div>
+  </span>
+</div>
+<!--右侧悬浮 END-->
+<script src="resources/indexRes/js/jquery-3.2.1.js"></script>
+<script src="resources/indexRes/js/index.js"></script>
+<script src="resources/indexRes/js/roundabout.js"></script>
 <script>
     //我们的优势:3D旋转轮播
     $(function () {
