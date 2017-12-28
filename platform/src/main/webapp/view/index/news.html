@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>关于我们</title>
+  <link rel="stylesheet" href="../../resources/indexRes/css/index.css">
+  <link rel="stylesheet" href="../../resources/indexRes/dist/layui/css/layui.css">
+</head>
+<body>
+<!--上部导航-->
+<header id="header">
+  <div class="header">
+    <!--logo-->
+    <div class="nav_logo">
+      <a href="index.html">
+        <i class="icon-logo"></i>
+      </a>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav">
+      <ul class="nav_stair">
+        <li class="nav_stairlist"><a href="index.html">首页</a></li>
+        <li class="nav_stairlist"><a href="advantage.html">优势</a></li>
+        <li class="nav_stairlist pro">
+          <a>产品体系</a>
+          <div class="pro_menu">
+            <ul class="pro_list">
+              <li><a href="../login/proMedialogin.html">媒体主平台</a></li>
+              <li><a href="../login/proAdvLogin.html">广告主平台</a></li>
+              <li><a href="proDataAdmin.html">数据管理平台</a></li>
+              <li><a href="proAdvDeal.html">广告交易平台</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_stairlist"><a href="mediaResource.html">媒体资源库</a></li>
+        <li class="nav_stairlist"><a href="cooperation.html">合作案例</a></li>
+        <li class="nav_stairlist"><a href="news.html" class="on">新闻中心</a></li>
+        <li class="nav_stairlist"><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <!--登录按钮-->
+    <div class="h_login_btn">
+      <a href="../login/login.html" target="_blank" class="btn">登录</a>
+    </div>
+  </div>
+</header>
+<!--上部导航end-->
+
+<!--中间banner-->
+<div id="news_banner">
+  <div class="news_banner_text">
+    <h2>新闻中心</h2>
+  </div>
+</div>
+<!--中间banner END-->
+<!--新闻分类菜单-->
+<div class="news_menu">
+  <div class="news_menu_box">
+    <ul class="news_menu_list">
+      <li><a href="javascript:void(0);" class="menubg" onclick="queryNews();">全部</a></li>
+      <li><a href="javascript:void(0);" onclick="queryNews(1,0);">媒体报道</a></li>
+      <li><a href="javascript:void(0);" onclick="queryNews(1,1);">最新活动</a></li>
+      <li><a href="javascript:void(0);" onclick="queryNews(1,2);">公司动态</a></li>
+    </ul>
+  </div>
+</div>
+<!--新闻分类菜单 END-->
+<!--新闻内容-->
+<div class="news_main">
+  <div class="news_main_box">
+    <ul class="news_main_list">
+      <li>
+      <dl>
+      <dt class="newsl">
+      <a href=""><img src="../../resources/indexRes/img/newssd.jpg"></a>
+      </dt>
+      <dd class="newsr">
+      <h4><a href="">祝大家圣诞快乐</a></h4>
+      <div class="time">发布时间:2017-12-25</div>
+      <p class="sdhappy"><a href="">圣诞节快乐</a></p>
+      </dd>
+      </dl>
+      </li>
+      <li>
+      <dl>
+      <dt class="newsl">
+      <a href=""><img src="../../resources/indexRes/img/newssd.jpg"></a>
+      </dt>
+      <dd class="newsr">
+      <h4><a href="">祝大家圣诞快乐</a></h4>
+      <div class="time">发布时间:2017-12-25</div>
+      <p class="sdhappy"><a href="">圣诞节快乐</a></p>
+      </dd>
+      </dl>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--新闻内容 END-->
+<!--分页-->
+<div class="pageDiv content">
+  <div id="pageDiv_News" class="pageDiv_main"></div>
+</div>
+<!--分页END-->
+
+<!--底部:联系方式/版权-->
+<iframe src="footer.html" width="100%" height="550px" frameborder="0" id="f_iframe" name="f_ifream"
+        scrolling="no"></iframe>
+<!--底部:联系方式/版权end-->
+
+<!--右侧悬浮的qq微信等-->
+<div id="right_xf">
+  <!--电话-->
+  <span>
+    <a href="javascript:;">
+      <i class="xf_icon1"></i>
+    </a>
+    <div class="xftel xf_c">010-1111-1111</div>
+  </span>
+  <!--qq-->
+  <span>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=760612423&site=qq&menu=yes">
+      <i class="xf_icon2" ></i>
+    </a>
+  </span>
+  <!--微博-->
+  <span>
+    <a href="javascript:;">
+      <i class="xf_icon3"></i>
+    </a>
+    <div class="xfwb xf_wb xf_c">
+      <img src="../../resources/indexRes/img/wbewm.jpg">
+      扫码关注新浪微博
+    </div>
+  </span>
+  <!--微信-->
+  <span>
+    <a href="javascript:;" class="xf4">
+      <i class="xf_icon4"></i>
+    </a>
+    <div class="xfwx xf_c">
+      <img src="../../resources/indexRes/img/wxewm.jpg">
+      扫码关注微信公众号
+    </div>
+  </span>
+</div>
+<!--右侧悬浮 END-->
+
+
+<script src="../../resources/indexRes/js/jquery-3.2.1.js"></script>
+<script src="../../resources/indexRes/js/news.js"></script>
+<script src="../../resources/indexRes/dist/layui/layui.js"></script>
+<script>
+  //产品体系二级菜单
+  $('.pro').hover(function () {
+    $('.pro_menu').css('display', 'block');
+  }, function () {
+    $('.pro_menu').css('display', 'none');
+  })
+
+</script>
+</body>
+</html>

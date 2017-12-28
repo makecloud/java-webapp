@@ -3,16 +3,17 @@ package com.liuyihui.platform.controller;
 import java.io.IOException;
 import java.io.InputStream;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * 控制器学习示例二：
- * 
+ *
  * 下列方法全是提取HTTP请求项目的示范：
  * @author liuyh
  */

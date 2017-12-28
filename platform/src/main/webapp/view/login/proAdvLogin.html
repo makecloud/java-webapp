@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>户外广告平台-媒体主平台</title>
+  <link rel="stylesheet" href="../../resources/loginRes/css/platform.css">
+  <style>
+    .adv_right {
+      position: relative;
+    }
+    .error {
+      position: absolute;
+      left: 264px;
+      height: 22px;
+      padding: 0 8px;
+      line-height: 22px;
+      font-size: 12px;
+      color: #000;
+      text-align: center;
+      border-radius: 3px;
+      background: #ffb30c;
+      opacity: 0;
+    }
+    .error span{
+      display: block;
+      width: auto;
+      height: 22px;
+      line-height: 22px;
+    }
+  </style>
+</head>
+<body>
+<!--上部导航-->
+<header id="header">
+  <div class="header">
+    <!--logo-->
+    <div class="nav_logo">
+      <a href="../index/index.html">
+        <i class="icon-logo"></i>
+      </a>
+    </div>
+    <!--导航菜单-->
+    <nav class="nav">
+      <ul class="nav_stair">
+        <li class="nav_stairlist"><a href="../index/index.html">首页</a></li>
+        <li class="nav_stairlist"><a href="../index/advantage.html">优势</a></li>
+        <li class="nav_stairlist pro">
+          <a class="on">产品体系</a>
+          <div class="pro_menu">
+            <ul class="pro_list">
+              <li><a href="proMedialogin.html">媒体主平台</a></li>
+              <li><a href="proAdvLogin.html" class="c">广告主平台</a></li>
+              <li><a href="../index/proDataAdmin.html">数据管理平台</a></li>
+              <li><a href="../index/proAdvDeal.html">广告交易平台</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_stairlist"><a href="../index/mediaResource.html">媒体资源库</a></li>
+        <li class="nav_stairlist"><a href="../index/cooperation.html">合作案例</a></li>
+        <li class="nav_stairlist"><a href="../index/news.html">新闻中心</a></li>
+        <li class="nav_stairlist"><a href="../index/about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <!--登录按钮-->
+    <div class="h_login_btn">
+      <a href="login.html" target="_blank" class="btn">登录</a>
+    </div>
+  </div>
+</header>
+<!--上部导航 END-->
+<!--banner 登录-->
+<div id="adv_login">
+  <div class="adv_box">
+    <div class="adv_left">
+      <h2>户外广告智能化营销平台</h2>
+      <p>利用大数据分析目标人群，锁定用户并精准投放；线下跨屏传播、互动玩出新意，实时播报投放效果及时调整营销策略，帮助品牌商更精准智能的做好线下营销布局。</p>
+    </div>
+    <div class="adv_right">
+      <div class="adv_content">
+        <ul class="adv_msg">
+          <li class="advname">
+            <span class="adv_icon">
+              <i class="adv_i1"></i>
+            </span>
+            <input type="text" class="advuname" id="advuname" placeholder="用户名" minlength="2" maxlength="12" autocomplete="off">
+          </li>
+          <li class="advpwd">
+            <span class="adv_icon">
+              <i class="adv_i2"></i>
+            </span>
+            <input type="password" class="advupwd" id="advupwd" placeholder="密码" minlength="6" maxlength="12"
+                   autocomplete="off">
+          </li>
+          <li class="advcode">
+            <span class="adv_icon">
+              <i class="adv_i3"></i>
+            </span>
+            <input type="text" class="advucode" id="advucode" placeholder="验证码" maxlength="4" autocomplete="off">
+            <span class="code_click"></span>
+          </li>
+          <li class="adv_check_box">
+            <label class="adv_pwd_btn">
+              <span class="adv_pwd">
+                <i></i>
+              </span>
+              记住密码
+            </label>
+          </li>
+          <li class="adv_login_btn">
+            <a href="../index/index.html" target="_blank">登录</a>
+          </li>
+          <li class="adv_prompt">
+            <span class="adv_prompt_register"><a href="register.html">立即注册</a></span>
+            <span class="adv_prompt_pwd"><a href="forgetpwd.html">忘记密码</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="error">
+        <span class="error_text"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--banner 登录 END-->
+
+<!--我们提供-->
+<div id="adv_afford">
+  <div class="adv_afford_box">
+    <div class="adv_common_top">
+      <h2>我们提供</h2>
+      <p>个性化的户外广告智能投放平台</p>
+    </div>
+    <div class="adv_afford_bottom">
+      <dl class="adv_afford">
+        <dt class="adv_afford_img1">
+          <img src="../../resources/loginRes/img/product-adv-add1.jpg" alt="">
+        </dt>
+        <dd class="adv_afford_txt1">
+          <div class="line"></div>
+          <h2>优质的媒体资源</h2>
+          <p>智能连接全国的户外媒体，对220多个城市的户外媒体进行整合，已接入50万+媒体点位，实现多场景化线下营销，已建立1600个媒体位标签体系，为广告主智能推荐媒体位，提升广告触达效果。</p>
+        </dd>
+      </dl>
+
+      <dl class="adv_afford">
+        <dt class="adv_afford_img2">
+          <img src="../../resources/loginRes/img/product-adv-add2.jpg" alt="">
+        </dt>
+        <dd class="adv_afford_txt2">
+          <div class="line"></div>
+          <h2>精准的定向传播</h2>
+          <p>利用大数据让数据服务于线下场景，进行定向投放。对受众人群进行多维度的定向分析，让潜在用户人群服务于线下场景，根据人群定向、天气定向、时段定向灵活的选择投放策略，精准刻画和锁定目标用户，进行广告投放。</p>
+        </dd>
+      </dl>
+
+      <dl class="adv_afford">
+        <dt class="adv_afford_img1">
+          <img src="../../resources/loginRes/img/product-adv-add3.jpg" alt="">
+        </dt>
+        <dd class="adv_afford_txt1">
+          <div class="line"></div>
+          <h2>互动场景营销</h2>
+          <p>告别单一的广告展现，部分媒体大屏接入直播功能，支持支付宝AR与微信小程序的互动形式，配合广告主的投放需求，帮助广告主与用户建立亲密联系，增加户外广告效果的冲击力和震撼效果，调动受众人群参与的热情。</p>
+        </dd>
+      </dl>
+
+      <dl class="adv_afford">
+        <dt class="adv_afford_img2">
+          <img src="../../resources/loginRes/img/product-adv-add4.jpg" alt="">
+        </dt>
+        <dd class="adv_afford_txt2">
+          <div class="line"></div>
+          <h2>线下线上联合营销</h2>
+          <p>利用智能化大数据分析技术，建立精准的人群画像体系，锁定目标受众，进行线上DSP追踪投放，实现广告的二次曝光，重复触达核心用户，增加广告传播力度。</p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<!--我们提供 END-->
+
+<!--多场景标签助您触达核心用户-->
+<div id="scene">
+  <div class="scene_box">
+    <div class="adv_common_top">
+      <h2>多场景标签助您触达核心用户</h2>
+      <p>汇总多类资源，覆盖消费者交通出行、生活娱乐、校园、工作等多个生活场景。</p>
+    </div>
+    <div class="scene_bottom">
+      <ul class="scene_list">
+        <li class="scene_l1">
+          <div class="scene_icon"><i class="scene_i1"></i></div>
+          <h4>学校</h4>
+          <p>小学、初中、高中、中专、大专、大学......</p>
+        </li>
+        <li class="scene_l2">
+          <div class="scene_icon"><i class="scene_i2"></i></div>
+          <h4>交通</h4>
+          <p>地铁、公交站、火车站、机场、长途车站、公交车、出租车......</p>
+        </li>
+
+        <li class="scene_l3">
+          <div class="scene_icon"><i class="scene_i3"></i></div>
+          <h4>购物休闲</h4>
+          <p>电影院、商场、商铺、景点、超市、便利店、餐厅、咖啡厅......</p>
+        </li>
+        <li class="scene_l3">
+          <div class="scene_icon"><i class="scene_i4"></i></div>
+          <h4>社区楼宇</h4>
+          <p>写字楼、住宅、酒店、公寓、酒店式公寓、 商住两用......</p>
+        </li>
+        <li class="scene_l3">
+          <div class="scene_icon"><i class="scene_i5"></i></div>
+          <h4>生活服务</h4>
+          <p>美容美发、医疗保健、银行、工厂、汽车服务、卫生间、健身房......</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--多场景标签助您触达核心用户 END-->
+
+<!--户外媒体主合作流程-->
+<div id="flow_path">
+  <div class="flow_path_box">
+    <div class="common_top">
+      <h2>户外广告主合作</h2>
+      <p>丰富的媒体点位等你投放</p>
+    </div>
+    <div class="flow_path_bottom">
+      <ul class="flow_path_list">
+        <li class="adv_flow_path">1、平台递交申请</li>
+        <li class="adv_flow_path">2、审核通过（资质）</li>
+        <li class="adv_flow_path">3、成为广告主</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--户外媒体主合作流程 END-->
+
+<!--右侧悬浮的qq微信等-->
+<div id="right_xf">
+  <!--电话-->
+  <span>
+    <a href="javascript:;">
+      <i class="xf_icon1"></i>
+    </a>
+    <div class="xftel xf_c">010-1111-1111</div>
+  </span>
+  <!--qq-->
+  <span>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=760612423&site=qq&menu=yes">
+      <i class="xf_icon2" ></i>
+    </a>
+  </span>
+  <!--微博-->
+  <span>
+    <a href="javascript:;">
+      <i class="xf_icon3"></i>
+    </a>
+    <div class="xfwb xf_wb xf_c">
+      <img src="../../resources/indexRes/img/wbewm.jpg">
+      扫码关注新浪微博
+    </div>
+  </span>
+  <!--微信-->
+  <span>
+    <a href="javascript:;" class="xf4">
+      <i class="xf_icon4"></i>
+    </a>
+    <div class="xfwx xf_c">
+      <img src="../../resources/indexRes/img/wxewm.jpg">
+      扫码关注微信公众号
+    </div>
+  </span>
+</div>
+<!--右侧悬浮 END-->
+
+<!--底部:联系方式/版权-->
+<iframe src="../index/footer.html" width="100%" height="500px" frameborder="0" id="f_iframe" name="f_ifream" scrolling="no"></iframe>
+<!--底部:联系方式/版权end-->
+<script src="../../resources/loginRes/js/jquery-3.2.1.js"></script>
+<script src="../../resources/loginRes/js/jquery.cookie.js"></script>
+<script src="../../resources/loginRes/js/proAdvLogin.js"></script>
+</body>
+</html>

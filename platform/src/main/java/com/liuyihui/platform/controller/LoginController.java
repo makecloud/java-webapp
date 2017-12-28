@@ -64,7 +64,7 @@ public class LoginController {
      */
     @RequestMapping("/dologin")
     public @ResponseBody
-    ApiResponse login(
+    ApiResponse doLogin(
             @RequestParam("userName") String userName,
             @RequestParam("password") String password,
             ModelMap modelMap,

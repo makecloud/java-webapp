@@ -29,7 +29,8 @@
     <mvc:annotation-driven/>
 
     <!-- 静态资源处理， css， js， imgs -->
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <mvc:resources mapping="/view/common/**" location="/view/common/"/>
+
 
     <!--配置异常处理-->
     <bean id="exceptionHandler" class="com.liuyihui.platform.util.MyExceptionHandler"/>
@@ -91,7 +92,6 @@
         <property name="suffix" value=".jsp"/>
         <property name="order" value="3"/>
     </bean>
-
 
     <!--200*1024*1024即200M resolveLazily属性启用是为了推迟文件解析，以便捕获文件大小异常 -->
     <bean id="multipartResolver"
