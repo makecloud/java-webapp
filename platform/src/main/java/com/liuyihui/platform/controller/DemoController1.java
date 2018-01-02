@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 @RequestMapping("/controller1")
-public class Controller1 {
+public class DemoController1 {
 	
 	/**
 	 * {×××}占位符， 请求的URL可以是 “/users/123456”或 “/users/abcd” ，通过@PathVariable可以提取 URI模板模式中的{×××}中的×××变量。 

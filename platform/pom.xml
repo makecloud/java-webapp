@@ -148,6 +148,20 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.22</version>
         </dependency>
+        <!--goeasy推送相关-->
+        <dependency>
+            <groupId>io.goeasy</groupId>
+            <artifactId>goeasy-sdk</artifactId>
+            <version>0.3.1</version>
+            <systemPath>${project.basedir}/lib/goeasy-sdk-0.3.8.jar</systemPath>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
     </dependencies>
 
     <!-- 构建相关 -->
@@ -161,6 +175,26 @@
                     <source>1.6</source>
                     <target>1.6</target>
                 </configuration>
+            </plugin>
+
+            <!--插件:本地jar打入war包-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/lib</outputDirectory>
+                            <includeScope>system</includeScope>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <!--解决类包中的xml文件输出不到classes文件夹下的问题-->
