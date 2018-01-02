@@ -97,11 +97,11 @@ ul.user-pulldown.dropdown-menu:after{
   display: block;
   min-width: 50px;
   height:100%;
-  padding-top:5px;
+  margin-top:5px;
 }
 .clock-bell-num{
   position: absolute;
-  top:16px;
+  top:12px;
   left: 10px;
   display: block;
   width: 20px;

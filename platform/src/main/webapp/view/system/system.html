@@ -34,7 +34,8 @@
     <!--把任何div元素包裹的内容区加上具有好的滚动条。slimscroll不占用任何视觉空间，它只出现在一个用户启动的鼠标。用户可以拖动滚动条或使用鼠标滚轮改变滚动值。-->
     <script src="common/jquery-ui/jquery.slimscroll.min.js"></script>
 
-    <script type="text/javascript" src="http://cdn.goeasy.io/goeasy.js"></script>
+    <script src="js/system.js"></script>
+    <script type="text/javascript" src="https://cdn.goeasy.io/goeasy.js"></script>
     <script type="text/javascript">
 
 //        $.session.set('company_id', 0);
@@ -51,7 +52,7 @@
         });
         // JS订阅信息
         goEasy.subscribe({
-            channel : 'indexMsg'+'0',
+            channel : 'indexMsg',
             onMessage : function(message) { //自动接收推送信息
                 // 获取未读消息数量
                 getUnreadMessageCount();
