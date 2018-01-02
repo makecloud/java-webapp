@@ -119,7 +119,7 @@ login_btn.click(function (e) {
                         $.cookie('username', null);
                         $.cookie('userpwd', null);
                     }
-                    window.location.href='../index/index.html';
+                    window.location.href='/platform/system';
                 }
             },
             error: function () {
