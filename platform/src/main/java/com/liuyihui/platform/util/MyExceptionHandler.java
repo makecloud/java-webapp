@@ -16,7 +16,8 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 //        e.printStackTrace();
         //session异常,跳转到登录页面
         if (e instanceof HttpSessionRequiredException) {
-            return new ModelAndView("login");
+//            return new ModelAndView("login");
+            return new ModelAndView("redirect:resources/login/login.html");
         }
         //未分配modelAndView的的异常
         return new ModelAndView("commonErrorPage");

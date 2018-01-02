@@ -13,6 +13,17 @@
         <springframework.version>4.1.3.RELEASE</springframework.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>goeasy</id>
+            <name>goeasy</name>
+            <url>
+                http://maven.goeasy.io/content/repositories/releases/
+            </url>
+        </repository>
+    </repositories>
+
+
     <!-- 依赖管理 -->
     <dependencies>
 
@@ -152,8 +163,7 @@
         <dependency>
             <groupId>io.goeasy</groupId>
             <artifactId>goeasy-sdk</artifactId>
-            <version>0.3.1</version>
-            <systemPath>${project.basedir}/lib/goeasy-sdk-0.3.8.jar</systemPath>
+            <version>0.3.8</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
@@ -167,6 +177,17 @@
     <!-- 构建相关 -->
     <build>
         <finalName>platform</finalName>
+        <!--解决类包中的xml文件输出不到web项目结构的classes文件夹下的问题-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <!--集成插件-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -178,7 +199,7 @@
             </plugin>
 
             <!--插件:本地jar打入war包-->
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.10</version>
@@ -190,21 +211,13 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/lib</outputDirectory>
+                            <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/lib
+                            </outputDirectory>
                             <includeScope>system</includeScope>
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
-        <!--解决类包中的xml文件输出不到classes文件夹下的问题-->
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-        </resources>
     </build>
 </project>

@@ -30,6 +30,11 @@
 
     <!-- 静态资源处理， css， js， imgs -->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <!-- 静态资源处理， css， js， imgs -->
+    <mvc:resources mapping="/css/**" location="/view/system/css/"/><!--适应 /platform/js/system.js形式-->
+    <mvc:resources mapping="/js/**" location="/view/system/js/"/>
+    <mvc:resources mapping="/img/**" location="/view/system/img/"/>
+    <mvc:resources mapping="/common/**" location="/view/system/common/"/>
 
 
     <!--配置异常处理-->

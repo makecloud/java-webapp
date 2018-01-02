@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class PushMessageController {
-    private static final String APP_KEY = "BC-e8b7c7bbd5f5470bae788a6ae0f03ea9";
-    private static final String APPLICATION_NAME = "indexMsg";
+    private static final String GOEASY_APP_KEY = "BC-e8b7c7bbd5f5470bae788a6ae0f03ea9";
+    private static final String GOEASY_APPLICATION_NAME = "indexMsg";
+    private static final String GOEASY_REST_HOST="http://rest-hangzhou.goeasy.io";
 
     @RequestMapping(value = "/pushmsg", method = RequestMethod.GET)
     public @ResponseBody
@@ -25,8 +26,8 @@ public class PushMessageController {
             return apiResponse;
         }
         //todo 推送消息
-        GoEasy goEasy = new GoEasy(APP_KEY);
-        goEasy.publish(APPLICATION_NAME, message, new PublishListener() {
+        GoEasy goEasy = new GoEasy(GOEASY_REST_HOST, GOEASY_APP_KEY);
+        goEasy.publish(GOEASY_APPLICATION_NAME, message, new PublishListener() {
             @Override
             public void onSuccess() {
                 super.onSuccess();

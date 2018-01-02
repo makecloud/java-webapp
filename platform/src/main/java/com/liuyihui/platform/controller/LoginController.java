@@ -55,7 +55,9 @@ public class LoginController {
             System.out.println("已登录过");
             return "index/index";
         }
-        return "login/login";
+
+        //返回静态页面-登录页面
+        return "redirect:resources/login/login.html";
     }
 
     /**
@@ -125,7 +127,22 @@ public class LoginController {
         }*/
         session.removeAttribute("user");
         sessionStatus.setComplete();//这个方法告诉了springmvc清除session中的所有属性了
-        return "login";
+        //返回静态页面-登录页面
+        return "redirect:resources/login/login.html";
+    }
+
+    /**
+     * 登陆后的页面
+     *
+     * @return
+     */
+    @RequestMapping("/system")
+    public String systemPage(@ModelAttribute("user") User user) {
+        if (user.getUserName() != null) {
+            return "/system/system";
+        }
+        //返回静态页面-登录页面
+        return "redirect:resources/login/login.html";
     }
 
 }
