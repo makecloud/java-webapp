@@ -25,9 +25,6 @@ public class LoginService {
         //查询数据
         //返回数据
         User user = userDAO.selectUserByName(userName);
-        System.out.println(user.getId());
-        System.out.println(user.getUserName());
-        System.out.println(user.getPassword());
         return user;
 
     }

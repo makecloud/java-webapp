@@ -89,12 +89,10 @@ login_btn.click(function (e) {
         error.stop().animate({'opacity': '1'}, 300);
         timer();
     } else {
-        e.preventDefault();
-        alert('填写正确!ajax后台检测是否有该用户,密码是否正确!');
         //ajax请求后台验证用户名是否存在,密码是否正确
         //如果密码正确
         $.ajax({
-            url: 'htpp://localhost:8080/platform/dologin',
+            url: '../../dologin',
             type: 'post',
             dataType: 'json',
             data: {
@@ -105,11 +103,9 @@ login_btn.click(function (e) {
             success: function (data) {
                 //如果用户不存在:提示用户不存在;如果用户存在:则判断密码正确性
                 if (data.code == 9999) {
-                    e.preventDefault();
-                    var msg = data.msg;
+                    var msg = data.message;
                     alert(msg);
                 } else if (data.code == 8888) {//存在:密码不正确,则提示密码不正确
-                    e.preventDefault();
                     error_text.html('密码不正确,请重新输入!');
                     error.css('top', '358px');
                     error.animate({'opacity': '1'}, 300);
@@ -123,6 +119,7 @@ login_btn.click(function (e) {
                         $.cookie('username', null);
                         $.cookie('userpwd', null);
                     }
+                    window.location.href='../index/index.html';
                 }
             },
             error: function () {

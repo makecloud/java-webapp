@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能户外广告平台</title>
+    <link rel="stylesheet" href="common/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/system.css">
+
+    <!--[if lt IE 9]>
+    <script src="common/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <script src="common/ace/ace-extra.min.js"></script>
+
+    <script src="common/jquery-3.2.1.js"></script>
+    <script src="common/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="common/ace/ace.min.css" />
+    <!-- <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" /> -->
+    <!--搜索 查询-->
+    <!--<link rel="stylesheet" href="css/frame-user.css" />-->
+
+    <!--自动补全-->
+    <!--基于bootstrap的UI,很适合后台管理开发。轻量级好用的后台管理系统模版.Bootstrap是Twitter推出的一个用于前端开发的开源工具包。-->
+    <script src="common/typeahead-bs2.min.js"></script>
+    <!--在测试过程中遇到Jquery UI Dialog异常的情况，表现为在拖拽Dialog标头时出现Dialog跳跃的问题，对比jquery ui与jquery在协调工作情况下的运行情况。-->
+    <script src="common/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+    <link rel="stylesheet" href="common/jquery-ui/jquery-ui-1.10.3.full.min.css" />
+    <!--类库它通过模拟事件来将鼠标事件匹配touch事件 。只需要按照jQuery UI的方法调用，会自动在移动设备上支持触摸事件。-->
+    <script src="common/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+    <!--把任何div元素包裹的内容区加上具有好的滚动条。slimscroll不占用任何视觉空间，它只出现在一个用户启动的鼠标。用户可以拖动滚动条或使用鼠标滚轮改变滚动值。-->
+    <script src="common/jquery-ui/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="http://cdn.goeasy.io/goeasy.js"></script>
+    <script type="text/javascript">
+
+//        $.session.set('company_id', 0);
+//        $.session.set('user_id', 1);
+//        $.session.set('user_name','admin');
+//        $.session.set('role_id', 1);
+//        $.session.set('role_type', 1);
+//        $.session.set('isCertified', true);
+//        $.session.set('haveRebate', false);
+
+        // 初始化GoEasy对象
+        var goEasy = new GoEasy({
+            appkey : 'BS-1fbe4996ab104460bd9f0dd8c023ee33'
+        });
+        // JS订阅信息
+        goEasy.subscribe({
+            channel : 'indexMsg'+'0',
+            onMessage : function(message) { //自动接收推送信息
+                // 获取未读消息数量
+                getUnreadMessageCount();
+
+                // 弹出提示框
+                showMsgLayer(message.content);
+                //showMsgLayer("您有新信息，点击查看!");
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+<div class="navbar navbar-default" id="navbar" style="height: auto">
+    <div class="navbar-container" id="navbar-container">
+        <div class="navbar-header header-logo pull-left">
+            <a href="../../resources/index/index.html">
+                <img src="img/logo.png">
+            </a>
+        </div>
+        <div class="navbar-header pull-right">
+            <ul class="navbar-list">
+                <li class="header-labal">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="admin">
+                        <img src="img/touxiang.png@!40" class="navbar-user-img">
+                        <span class="user-info">上午好，</span>
+                        <span class="user-info">admin</span>
+                        <i class="user-icon fa fa-angle-down"></i>
+                    </a>
+                    <ul class="user-pulldown pull-right dropdown-menu">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="pulldown-icon-user fa fa-user"></i>
+                                个人信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="pulldown-icon-check fa fa-check-square-o"></i>
+                                认证信息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="pulldown-icon-change fa fa-cog"></i>
+                                修改密码
+                            </a>
+                        </li>
+                        <li class="user-line"></li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="pulldown-icon-exit fa fa-power-off"></i>
+                                退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="small-bell">
+                    <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle">
+                        <i class="clock-bell fa fa-bell"></i>
+                        <span class="clock-bell-num" id="msgInfo"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="header-nav pull-left">
+        </ul>
+
+    </div>
+</div>
+
+
+<!--左侧菜单栏-->
+
+
+
+
+
+
+
+
+
+</body>
+</html>

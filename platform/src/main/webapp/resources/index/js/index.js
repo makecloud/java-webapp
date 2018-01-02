@@ -17,7 +17,7 @@ $(function () {
   var img_text = $(".img_text");//得到img和text外层的div
   var b_text = $("b_text");//得到所有图片上的两层文字外层的div
   var b_btn = $(".b_btn");
-  var index = 0;
+  var index =1;
 
   var autoChange = window.setInterval(function () {
     if (index < img_text.length - 1) {
@@ -26,24 +26,24 @@ $(function () {
       index = 0;
     }
     change(index);
-  }, 3000);
+  }, 5000);
 
   //自动播放图片
   function change(num) {
     //传入的num为当前点击的数字按钮
     //所有的图片移除on_up,当前编号的图片添加on_up并且显示.
     img_text.eq(num).siblings(".img_text").children('.i_up').removeClass("on_up").stop(true).fadeOut(2000);
-    img_text.eq(num).children(".i_up").addClass("on_up").stop(true).fadeIn(2000);
+    img_text.eq(num).children(".i_up").addClass("on_up").stop(true).fadeIn(1500);
     b_btn.children("span").removeClass("on_btn").eq(num).addClass("on_btn");//123翻页按钮
     //当前编号对应的文字进入:下至上
-    img_text.eq(num).children('.b_text').children(".b_text1").stop(true).animate({top: "0"}, 500);
-    img_text.eq(num).children('.b_text').children(".b_text2").stop(true).animate({top: "0"}, 500);
-    img_text.eq(num).children('.b_text').stop(true).fadeIn(2000);
+    img_text.eq(num).children('.b_text').children(".b_text1").stop(true).animate({top: "0"}, 1500);
+    img_text.eq(num).children('.b_text').children(".b_text2").stop(true).animate({top: "0"}, 1500);
+    img_text.eq(num).children('.b_text').stop(true).fadeIn(1000);
 
     //其余的文字出去:上至下
     img_text.eq(num).siblings(".img_text").children('.b_text').children(".b_text1").stop(true).animate({top: "80px"}, 500);
     img_text.eq(num).siblings(".img_text").children('.b_text').children(".b_text2").stop(true).animate({top: "30px"}, 500);
-    img_text.eq(num).siblings(".img_text").children('.b_text').stop(true).fadeOut(300);
+    img_text.eq(num).siblings(".img_text").children('.b_text').stop(true).fadeOut(500);
   }
 
 //点击哪个数字,哪个添加class:on_up,并且切换对应的图片和文字
@@ -60,7 +60,7 @@ $(function () {
           index = 0;
         }
         change(index);//console.log(index);
-      }, 3000);
+      }, 5000);
     }
   );
 //问题就是第一个文字不是从下至上进入(是从原位置淡入)
