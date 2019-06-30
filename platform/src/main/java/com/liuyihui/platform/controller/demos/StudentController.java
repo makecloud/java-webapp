@@ -1,4 +1,4 @@
-package com.liuyihui.platform.controller;
+package com.liuyihui.platform.controller.demos;
 
 import com.liuyihui.platform.entity.ApiResponse;
 import com.liuyihui.platform.entity.Student;
@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 
 /**
+ * 用来测试学习登录功能
+ * <p>
  * 类名上的@sessionAttribute注解和方法参数上的@ModelAttribute注解联合使用,才能实现单向地将session中的user对象注入到user参数
  */
 @Controller
@@ -24,8 +26,8 @@ public class StudentController {
      * @return
      */
     @RequestMapping(value = "/getStudent", method = RequestMethod.GET)
-    public @ResponseBody
-    ApiResponse getData(@ModelAttribute("user") User user, HttpSession session) {
+    @ResponseBody
+    public ApiResponse getData(@ModelAttribute("user") User user, HttpSession session) {
 
         //打印user
         ApiResponse apiResponse = new ApiResponse();

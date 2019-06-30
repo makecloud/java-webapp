@@ -26,6 +26,13 @@
 
     <!-- 依赖管理 -->
     <dependencies>
+        <!-- servlet相关,服务器端lib有,但maven编译时需要-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>3.0-alpha-1</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- spring相关 -->
         <dependency>
@@ -159,6 +166,13 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.22</version>
         </dependency>
+        <!-- opensymphony/sitemesh相关 -->
+        <dependency>
+            <groupId>opensymphony</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>2.4.2</version>
+        </dependency>
+
         <!--goeasy推送相关-->
         <dependency>
             <groupId>io.goeasy</groupId>
@@ -177,7 +191,7 @@
     <!-- 构建相关 -->
     <build>
         <finalName>platform</finalName>
-        <!--解决类包中的xml文件输出不到web项目结构的classes文件夹下的问题-->
+        <!--解决src/main/java下包名下的xml文件输出不到web项目结构的classes文件夹下的问题-->
         <resources>
             <resource>
                 <directory>src/main/java</directory>

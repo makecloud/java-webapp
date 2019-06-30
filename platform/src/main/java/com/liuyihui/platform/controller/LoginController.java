@@ -24,9 +24,20 @@ public class LoginController {
     @Resource
     private LoginService loginService;
 
+    /**
+     * 跳转页面
+     *
+     * @return
+     */
     @RequestMapping("/")
     public String begin() {
-        return "redirect:resources/index/index.html";
+//        return "redirect:resources/index/index.html";
+        return "";
+    }
+
+    @RequestMapping("/hello")
+    public String hellojsp() {
+        return "hello";
     }
 
     /**

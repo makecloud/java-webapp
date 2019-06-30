@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 public class LoginService {
 
     @Resource(name = "userMapper")
-    private IUser userDAO;
+    private IUser userDAO;//使用resource注解注入实例
 
     /**
      * 登录服务
@@ -26,6 +26,5 @@ public class LoginService {
         //返回数据
         User user = userDAO.selectUserByName(userName);
         return user;
-
     }
 }

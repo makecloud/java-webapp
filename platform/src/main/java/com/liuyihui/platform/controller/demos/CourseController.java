@@ -1,4 +1,4 @@
-package com.liuyihui.platform.controller;
+package com.liuyihui.platform.controller.demos;
 
 import com.liuyihui.platform.entity.Course;
 import com.liuyihui.platform.service.CourseService;
@@ -41,7 +41,7 @@ public class CourseController {
     public String viewCourse(@RequestParam("courseId") int courseId, Model model) {
         Course c = courseService.getCourseById(courseId);
         model.addAttribute(c);
-        return "view_course";
+        return "/view/view_course.jsp";
     }
 
     /**
@@ -54,7 +54,7 @@ public class CourseController {
         Course c = courseService.getCourseById(courseId);
         model.addAttribute(c);
         System.out.println("查看：" + Conventions.getVariableName(c));
-        return "view_course";
+        return "/view/view_course.jsp";
     }
 
     /**

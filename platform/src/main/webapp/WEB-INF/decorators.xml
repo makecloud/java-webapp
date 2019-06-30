@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/view/decorators"><!--defaultDir:装饰器所在的目录-->
+    <!--这个配置文件是sitemesh必须的一个配置-->
+    <!--设置不进行装饰的,即请求这些资源的时候,不会走装饰器-->
+    <exclude>
+        <pattern>/resources/*</pattern>
+    </exclude>
+
+    <!--
+        以下标签定义一个装饰器.
+        一个装饰器就是一个普通页面,关键的是,这个页面将跟初始请求的页面一起组成一个最终页面返回给浏览器.
+        pattern: 哪些请求url走这个这个装饰器.
+    -->
+    <decorator name="main" page="main.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+
+
+</decorators>
