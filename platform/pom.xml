@@ -193,13 +193,15 @@
     <!-- 构建相关 -->
     <build>
         <finalName>platform</finalName>
-        <!--解决src/main/java下包名下的xml文件输出不到web项目结构的classes文件夹下的问题-->
         <resources>
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.xml</include>
                 </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
             </resource>
         </resources>
 
@@ -209,8 +211,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 
